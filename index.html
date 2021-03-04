@@ -4,11 +4,23 @@
 <head>
     <!-- meta tags -->
     <!-- Title of the document -->
-    <title>Devinefruit.com</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="Universe Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-	SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+    <title>Devinefruit - Creative Design Agency In Mumbai</title>		
+	<meta name="keyword" content="Creative design Company, Devinefruit Design Agency, Social Creative, Design Graphic design agency in mumbai, Creative design agency in mumbai, Social media agency in mumbai" />
+	<meta name="description" content="Devinefruit is one of the Best Creative Design Agency in Mumbai offering online marketing services for Creative Design, Branding, Social Media Marketing" />
+	<meta property="og:title" content="Creative design Company, Devinefruit Design Agency, Social Creative, Design Graphic design agency in mumbai, Creative design agency in mumbai, Social media agency in mumbai" />
+	<meta property="og:url" content="https://www.devinefruit.com/" />
+	<meta property="og:description" content="Devinefruit is one of the Best Creative Design Agency in Mumbai offering online marketing services for Creative Design, Branding, Social Media Marketing" />
+	<meta property="og:image" content="https://www.devinefruit.com/df-logo.png" />
+	<meta property="og:type" content="website" />
+	<meta property="twitter:title" content="Creative design Company, Devinefruit Design Agency, Social Creative, Design Graphic design agency in mumbai, Creative design agency in mumbai, Social media agency in mumbai" />
+	<meta property="twitter:url" content="https://www.devinefruit.com/" />
+	<meta property="twitter:description" content="Devinefruit is one of the Best Creative Design Agency in Mumbai offering online marketing services for Creative Design, Branding, Social Media Marketing" />
+	<meta property="twitter:image" content="https://www.devinefruit.com/df-logo.png" />
+	<meta name="robots" content="index, follow" /><link rel="canonical" href="https://www.devinefruit.com/" />
+	<link href="/favicon-16.png" rel="icon" type="image/png" />
+	<link href="/favicon-32.png" rel="icon" type="image/png" />
     <!-- /meta tags -->
     <!-- Owl Stylesheets -->
     <link rel="stylesheet" href="css/owl.carousel.min.css">
@@ -26,8 +38,17 @@
     <link href="//fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&amp;subset=cyrillic,latin-ext,vietnamese" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=cyrillic,cyrillic-ext,latin-ext,vietnamese"
         rel="stylesheet">
+
+	
+	<link href="https://fonts.googleapis.com/css?family=Mystery+Quest" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+
+
+
+
     <!-- /Online google fonts -->
-<script type="text/javascript" src="http://www.devinefruit.com/js/jquery.min.js"></script>
+<script type="text/javascript" src="https://www.devinefruit.com/js/jquery.min.js"></script>
 
 <script type="text/javascript">
 $(function() {
@@ -44,14 +65,14 @@ $(function() {
 
 		$.ajax({
 		  type: "POST",
-		  url: "http://www.devinefruit.com/contact-submit.php",
+		  url: "https://www.devinefruit.com/contact-submit.php",
 		  data: formData,
 		  success: function(data) {
 			$('#contactForm').html("<div id='successMessage'></div>");
-			$('#successMessage').html("<h3><img id='checkmark' src='https://wwwdevinefruitcom.000webhostapp.com/images/check.png'/>  Contact Form Submitted! We will be in touch soon.</h3>")
+			$('#successMessage').html("<h3><img id='checkmark' src='https://www.devinefruit.com/images/check.png'/>  Contact Form Submitted! We will be in touch soon.</h3>")
 			.hide()
 			.fadeIn(1500, function() {
-			  //$('#message').append("<img id='checkmark' src='https://wwwdevinefruitcom.000webhostapp.com/images/check.png' />");
+			  //$('#message').append("<img id='checkmark' src='https://www.devinefruit.com/images/check.png' />");
 			});
 		  }
 		});
@@ -68,7 +89,7 @@ $(function() {
     <div class="banner">
         <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="index.html">Devinefruit.com</a>
+                <a href="index.html"><img src="images/devinefruit-logo.png" alt="Devinefruit - Creative Branding Agency In Mumabi"/></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -82,29 +103,27 @@ $(function() {
                             </a>
                         </li>
                         <li class="nav-item ml-xl-2">
-                            <a class="nav-link scroll" href="#section2">About Us</a>
+                            <a class="nav-link-aboutus scroll" href="#aboutus">About Us</a>
                         </li>
                         <li class="nav-item ml-xl-2">
-                            <a class="nav-link scroll" href="#section1">Services</a>
+                            <a class="nav-link-service scroll" href="#services">Services</a>
                         </li>
                         <li class="nav-item dropdown ml-xl-2">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
                                 aria-expanded="false">
-                                Dropdown
+                                Profile
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item scroll" href="#section5">Team</a>
-                                <a class="dropdown-item scroll" href="#section6">Clients</a>
-                                <a class="dropdown-item scroll" href="#section7">Testimonials</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="typography.html">Typography</a>
+                                <a class="dropdown-item scroll" href="#team">Team</a>
+                                <a class="dropdown-item scroll" href="#clients">Clients</a>
+                                <a class="dropdown-item scroll" href="#testimonials">Testimonials</a>
                             </div>
                         </li>
                         <li class="nav-item ml-xl-2">
-                            <a class="nav-link scroll" href="#section3">Portfolio</a>
+                            <a class="nav-link-portfolio scroll" href="#portfolio">Portfolio</a>
                         </li>
                         <li class="nav-item ml-xl-2">
-                            <a class="nav-link scroll" href="#section8">Contact</a>
+                            <a class="nav-link-service scroll" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -117,18 +136,17 @@ $(function() {
     </div>
     <!-- /banner -->
     <!-- services grids -->
-    <section class="w3layouts-wrapper text-center py-5" id="section1">
+    <section class="w3layouts-wrapper text-center py-5" id="services">
         <div class="container py-lg-4">
             <header>
-                <h3>Our Services</h3>
-                <!--<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>-->
+                <h1 class="serviceheader">Our Services</h1>
             </header>
             <div class="w3ls-wrapper-content">
                 <div class="row pt-lg-3">
                     <div class="agileits-s-grid col-lg-4 col-12 mt-5">
                         <i class="fab fa-buromobelexperte icon1"></i>
                         <h4 class="my-lg-4 my-sm-3 mt-3 mb-2">Website Design</h4>
-                        <p>We make modern website design while considering the user experience, search engine optimization(SEO), ease of use and technical details. Our team focusses on usability and responsive design, creative branding solutions, and custom programming.</p>
+                        <p>We make modern website design while considering the user experience, search engine optimization(SEO), ease of use and technical details.</p>
                     </div>
                     <div class="agileits-s-grid col-lg-4 col-12 mt-sm-5 mt-5">
                         <i class="fas fa-code icon2"></i>
@@ -138,14 +156,14 @@ $(function() {
                     <div class="agileits-s-grid col-lg-4 col-12 mt-5">
                         <i class="fab fa-angular icon3"></i>
                         <h4 class="my-lg-4 my-sm-3 mt-3 mb-2">Digital Marketing</h4>
-                        <p>From pay-per-click and SEO services to social and content, we work together to ensure the best results across every campaign. We believe in data driven and ROI approach to give you full value of your investment.</p>
+                        <p>From pay-per-click and SEO services to social and content, we work together to ensure the best results across every campaign. We believe in data driven and <strong>ROI</strong> approach to give you full value of your investment.</p>
                     </div>
                 </div>
                 <div class="row pt-lg-3">
                     <div class="agileits-s-grid col-lg-4 col-12 mt-5">
                         <i class="fab fa-apple icon4"></i>
                         <h4 class="my-lg-4 my-sm-3 mt-3 mb-2">Social Media Marketing</h4>
-                        <p>Our SMM services help you achieve brand awareness, relationships, and website traffic. It is through Facebook, Instagram, LinkedIn, Twitter and Pinterest that we ATTRACT, ENGAGE AND GROW your audience.</p>
+                        <p>Our SMM services help you achieve brand awareness, relationships, and website traffic. It is through Facebook, Instagram, LinkedIn, Twitter and Pinterest that we <strong>ATTRACT, ENGAGE AND GROW</strong> your audience.</p>
                     </div>
                     <div class="agileits-s-grid col-lg-4 col-12 mt-5">
                         <i class="fas fa-at icon5"></i>
@@ -155,7 +173,7 @@ $(function() {
                     <div class="agileits-s-grid col-lg-4 col-12 mt-5">
                         <i class="fab fa-autoprefixer icon6"></i>
                         <h4 class="my-lg-4 my-sm-3 mt-3 mb-2">Print</h4>
-                        <p>We design, copy-write and print all your marketing materials to increase your brand value.</p>
+                        <p>We design, copy-write and print all your marketing materials to increase your brand value. We haven't forgotten about the power of print to engage and excite their consumers.</p>
                     </div>
                 </div>
             </div>
@@ -163,7 +181,7 @@ $(function() {
     </section>
     <!-- /services grids -->
     <!-- about -->
-    <section class="w3-about" id="section2">
+    <section class="w3-about" id="aboutus">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-6 wthree-abt-info">
@@ -186,7 +204,7 @@ We understand your concerns, and that is why we are here for your service with o
                                 <div class="modal-body">
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <img class="card-img-top align-self-center" src="images/abt.jpg" alt="Card image cap">
+                                            <img class="card-img-top align-self-center" src="images/about-us.png" alt="About Us">
                                         </div>
                                         <div class="col-md-6">
                                             <p>We are here to help you set your brand aspirations right!  When it comes to building your brand, you may be reluctant where to start from <b>HOW-WHEN-WHERE!</b><br><br>
@@ -202,17 +220,17 @@ We understand your concerns, and that is why we are here for your service with o
                     <!-- /Modal -->
                 </div>
                 <div class="col-lg-6 p-0">
-                    <img src="images/abt.jpg" alt="about-image-agileits" class="img-fluid" />
+                    <img src="images/about-us.png" alt="About Us" class="img-fluid" />
                 </div>
             </div>
         </div>
     </section>
     <!-- /about -->
     <!--gallery  -->
-    <section class="wthree-row w3-gallery py-sm-5 py-3" id="section3">
+    <section class="wthree-row w3-gallery py-sm-5 py-3" id="portfolio">
         <div class="container-fluid py-md-5 py-3 py-sm-2 text-center">
             <header>
-                <h3>Portfolio</h3>
+                <h3 class="portfolioheader">Portfolio</h3>
             </header>
             <ul class="portfolio-categ filter pt-5 pt-sm-4 mb-5 mb-sm-4 text-center">
                 <li class="port-filter all active">
@@ -236,90 +254,128 @@ We understand your concerns, and that is why we are here for your service with o
 				<!-- New Postfolio Start -->
 				<li class="portfolio-item2" data-id="id-0" data-type="cat-item-1">
                     <div>
-                        <a class="image-gal" href="images/MRS_INDIA_LOGO.png" data-gal="prettyPhoto[gallery]">
+                        <a class="image-gal" href="images/mrs-india-logo.png" data-gal="prettyPhoto[gallery]">
 
-                            <img src="images/MRS_INDIA_LOGO.png" class="img-fluid w3layouts agileits" alt="">
+                            <img src="images/mrs-india-logo.png" class="img-fluid w3layouts agileits" alt="Mrs India Logo">
 
                         </a>
                     </div>
                 </li>
 				<li class="portfolio-item2" data-id="id-1" data-type="cat-item-1">
                     <div>
-                        <a class="image-gal" href="images/Proventus.png" data-gal="prettyPhoto[gallery]">
+                        <a class="image-gal" href="images/proventus-logo.png" data-gal="prettyPhoto[gallery]">
 
-                            <img src="images/Proventus.png" class="img-fluid w3layouts agileits" alt="">
+                            <img src="images/proventus-logo.png" class="img-fluid w3layouts agileits" alt="Proventus Logo">
 
                         </a>
                     </div>
                 </li>
 				<li class="portfolio-item2" data-id="id-2" data-type="cat-item-1">
                     <div>
-                        <a class="image-gal" href="images/ARIVU.png" data-gal="prettyPhoto[gallery]">
+                        <a class="image-gal" href="images/arivu-logo.png" data-gal="prettyPhoto[gallery]">
 
-                            <img src="images/ARIVU.png" class="img-fluid w3layouts agileits" alt="">
+                            <img src="images/arivu-logo.png" class="img-fluid w3layouts agileits" alt="Arivu Logo">
 
                         </a>
                     </div>
                 </li>
 				<li class="portfolio-item2" data-id="id-3" data-type="cat-item-1">
                     <div>
-                        <a class="image-gal" href="images/BMS.png" data-gal="prettyPhoto[gallery]">
+                        <a class="image-gal" href="images/book-my-styler-logo.png" data-gal="prettyPhoto[gallery]">
 
-                            <img src="images/BMS.png" class="img-fluid w3layouts agileits" alt="">
+                            <img src="images/book-my-styler-logo.png" class="img-fluid w3layouts agileits" alt="BookMyStyler Logo">
 
                         </a>
                     </div>
                 </li>
 				<li class="portfolio-item2" data-id="id-4" data-type="cat-item-1">
                     <div>
-                        <a class="image-gal" href="images/The_Gallery.png" data-gal="prettyPhoto[gallery]">
+                        <a class="image-gal" href="images/the-gallery-logo.png" data-gal="prettyPhoto[gallery]">
 
-                            <img src="images/The_Gallery.png" class="img-fluid w3layouts agileits" alt="">
+                            <img src="images/the-gallery-logo.png" class="img-fluid w3layouts agileits" alt="The Gallery Logo">
 
                         </a>
                     </div>
                 </li>
+				<li class="portfolio-item2" data-id="id-5" data-type="cat-item-1">
+                    <div>
+                        <a class="image-gal" href="images/matheran-logo.png" data-gal="prettyPhoto[gallery]">
+
+                            <img src="images/matheran-logo.png" class="img-fluid w3layouts agileits" alt="Matheran Logo">
+
+                        </a>
+                    </div>
+                </li>
+				<li class="portfolio-item2" data-id="id-6" data-type="cat-item-1">
+                    <div>
+                        <a class="image-gal" href="images/egg-lounge-logo.jpg" data-gal="prettyPhoto[gallery]">
+
+                            <img src="images/egg-lounge-logo.jpg" class="img-fluid w3layouts agileits" alt="Egg Lounge Logo">
+
+                        </a>
+                    </div>
+                </li>
+				<li class="portfolio-item2" data-id="id-7" data-type="cat-item-1">
+                    <div>
+                        <a class="image-gal" href="images/cosmic-logo.jpg" data-gal="prettyPhoto[gallery]">
+
+                            <img src="images/cosmic-logo.jpg" class="img-fluid w3layouts agileits" alt="Cosmic Logo">
+
+                        </a>
+                    </div>
+                </li>
+				<li class="portfolio-item2" data-id="id-8" data-type="cat-item-1">
+                    <div>
+                        <a class="image-gal" href="images/bdazzled-logo.jpg" data-gal="prettyPhoto[gallery]">
+
+                            <img src="images/bdazzled-logo.jpg" class="img-fluid w3layouts agileits" alt="Bdazzled Logo">
+
+                        </a>
+                    </div>
+                </li>
+
+
 				<li class="portfolio-item2" data-id="id-0" data-type="cat-item-3">
                     <div>
-                        <a class="image-gal" href="images/BMS_TSHIRT.png" data-gal="prettyPhoto[gallery]">
+                        <a class="image-gal" href="images/bms-tshirt-branding.png" data-gal="prettyPhoto[gallery]">
 
-                            <img src="images/BMS_TSHIRT.png" class="img-fluid w3layouts agileits" alt="">
+                            <img src="images/bms-tshirt-branding.png" class="img-fluid w3layouts agileits" alt="BMS Tshirt Branding">
 
                         </a>
                     </div>
                 </li>
 				<li class="portfolio-item2" data-id="id-1" data-type="cat-item-3">
                     <div>
-                        <a class="image-gal" href="images/BMS_LOGO_MOCKUP.png" data-gal="prettyPhoto[gallery]">
+                        <a class="image-gal" href="images/bms-logo-mockup.png" data-gal="prettyPhoto[gallery]">
 
-                            <img src="images/BMS_LOGO_MOCKUP.png" class="img-fluid w3layouts agileits" alt="">
+                            <img src="images/bms-logo-mockup.png" class="img-fluid w3layouts agileits" alt="BMS Logo Mockup Branding">
 
                         </a>
                     </div>
                 </li>
 				<li class="portfolio-item2" data-id="id-2" data-type="cat-item-3">
                     <div>
-                        <a class="image-gal" href="images/BMS_MUG_MOCKUP.png" data-gal="prettyPhoto[gallery]">
+                        <a class="image-gal" href="images/bms-mug-mockup.png" data-gal="prettyPhoto[gallery]">
 
-                            <img src="images/BMS_MUG_MOCKUP.png" class="img-fluid w3layouts agileits" alt="">
+                            <img src="images/bms-mug-mockup.png" class="img-fluid w3layouts agileits" alt="BMS Mug Mockup Branding">
 
                         </a>
                     </div>
                 </li>
 				<li class="portfolio-item2" data-id="id-3" data-type="cat-item-3">
                     <div>
-                        <a class="image-gal" href="images/BMS_Branding.png" data-gal="prettyPhoto[gallery]">
+                        <a class="image-gal" href="images/bms-branding.png" data-gal="prettyPhoto[gallery]">
 
-                            <img src="images/BMS_Branding.png" class="img-fluid w3layouts agileits" alt="">
+                            <img src="images/bms-branding.png" class="img-fluid w3layouts agileits" alt="BMS Branding">
 
                         </a>
                     </div>
                 </li>
 				<li class="portfolio-item2" data-id="id-4" data-type="cat-item-3">
                     <div>
-                        <a class="image-gal" href="images/BMS_Cap.png" data-gal="prettyPhoto[gallery]">
+                        <a class="image-gal" href="images/bms-cap.png" data-gal="prettyPhoto[gallery]">
 
-                            <img src="images/BMS_Cap.png" class="img-fluid w3layouts agileits" alt="">
+                            <img src="images/bms-cap.png" class="img-fluid w3layouts agileits" alt="BMS Cap Branding">
 
                         </a>
                     </div>
@@ -327,149 +383,212 @@ We understand your concerns, and that is why we are here for your service with o
 
 				<li class="portfolio-item2" data-id="id-5" data-type="cat-item-3">
                     <div>
-                        <a class="image-gal" href="images/MRS_INDIA_BRANDING_MOCKUP.png" data-gal="prettyPhoto[gallery]">
+                        <a class="image-gal" href="images/mrs-india-branding-makeup.png" data-gal="prettyPhoto[gallery]">
 
-                            <img src="images/MRS_INDIA_BRANDING_MOCKUP.png" class="img-fluid w3layouts agileits" alt="">
+                            <img src="images/mrs-india-branding-makeup.png" class="img-fluid w3layouts agileits" alt="Mrs India Branding Makeup">
 
                         </a>
                     </div>
                 </li>
 				<li class="portfolio-item2" data-id="id-6" data-type="cat-item-3">
                     <div>
-                        <a class="image-gal" href="images/MRS_INDIA_BRANDING_MOCKUP02.png" data-gal="prettyPhoto[gallery]">
+                        <a class="image-gal" href="images/mrs-india-branding-pillow-cover.png" data-gal="prettyPhoto[gallery]">
 
-                            <img src="images/MRS_INDIA_BRANDING_MOCKUP02.png" class="img-fluid w3layouts agileits" alt="">
+                            <img src="images/mrs-india-branding-pillow-cover.png" class="img-fluid w3layouts agileits" alt="Mrs India Branding Pillow Cover">
 
                         </a>
                     </div>
                 </li>
 				<li class="portfolio-item2" data-id="id-7" data-type="cat-item-3">
                     <div>
-                        <a class="image-gal" href="images/MRS_INDIA_BRANDING_MOCKUP03.png" data-gal="prettyPhoto[gallery]">
+                        <a class="image-gal" href="images/mrs-india-branding-hand-bag.png" data-gal="prettyPhoto[gallery]">
 
-                            <img src="images/MRS_INDIA_BRANDING_MOCKUP03.png" class="img-fluid w3layouts agileits" alt="">
+                            <img src="images/mrs-india-branding-hand-bag.png" class="img-fluid w3layouts agileits" alt="Mrs India Branding Hand bag">
 
                         </a>
                     </div>
                 </li>
 				<li class="portfolio-item2" data-id="id-8" data-type="cat-item-3">
                     <div>
-                        <a class="image-gal" href="images/MRS_INDIA_BRANDING_MOCKUP04.png" data-gal="prettyPhoto[gallery]">
+                        <a class="image-gal" href="images/mrs-india-branding-lotion.png" data-gal="prettyPhoto[gallery]">
 
-                            <img src="images/MRS_INDIA_BRANDING_MOCKUP04.png" class="img-fluid w3layouts agileits" alt="">
+                            <img src="images/mrs-india-branding-lotion.png" class="img-fluid w3layouts agileits" alt="Mrs India Branding Lotion">
 
                         </a>
                     </div>
                 </li>
 				<li class="portfolio-item2" data-id="id-9" data-type="cat-item-3">
                     <div>
-                        <a class="image-gal" href="images/MRS_INDIA_BRANDING_MOCKUP05.png" data-gal="prettyPhoto[gallery]">
+                        <a class="image-gal" href="images/mrs-india-branding-poster.png" data-gal="prettyPhoto[gallery]">
 
-                            <img src="images/MRS_INDIA_BRANDING_MOCKUP05.png" class="img-fluid w3layouts agileits" alt="">
+                            <img src="images/mrs-india-branding-poster.png" class="img-fluid w3layouts agileits" alt="Mrs India Branding Poster">
 
                         </a>
                     </div>
                 </li>
 				<li class="portfolio-item2" data-id="id-10" data-type="cat-item-3">
                     <div>
-                        <a class="image-gal" href="images/MRS_INDIA_BRANDING_MOCKUP06.png" data-gal="prettyPhoto[gallery]">
+                        <a class="image-gal" href="images/mrs-india-branding-perfume.png" data-gal="prettyPhoto[gallery]">
 
-                            <img src="images/MRS_INDIA_BRANDING_MOCKUP06.png" class="img-fluid w3layouts agileits" alt="">
+                            <img src="images/mrs-india-branding-perfume.png" class="img-fluid w3layouts agileits" alt="Mrs India Branding Perfume">
 
                         </a>
                     </div>
                 </li>
 				<li class="portfolio-item2" data-id="id-11" data-type="cat-item-3">
                     <div>
-                        <a class="image-gal" href="images/MRS_INDIA_BRANDING_MOCKUP07.png" data-gal="prettyPhoto[gallery]">
+                        <a class="image-gal" href="images/mrs-india-branding-tshirt.png" data-gal="prettyPhoto[gallery]">
 
-                            <img src="images/MRS_INDIA_BRANDING_MOCKUP07.png" class="img-fluid w3layouts agileits" alt="">
+                            <img src="images/mrs-india-branding-tshirt.png" class="img-fluid w3layouts agileits" alt="Mrs India Branding Tshirt">
 
                         </a>
                     </div>
                 </li>
 				<li class="portfolio-item2" data-id="id-12" data-type="cat-item-3">
                     <div>
-                        <a class="image-gal" href="images/MRS_INDIA_BRANDING_MOCKUP08.png" data-gal="prettyPhoto[gallery]">
+                        <a class="image-gal" href="images/mrs-india-branding-magazine-cover.png" data-gal="prettyPhoto[gallery]">
 
-                            <img src="images/MRS_INDIA_BRANDING_MOCKUP08.png" class="img-fluid w3layouts agileits" alt="">
+                            <img src="images/mrs-india-branding-magazine-cover.png" class="img-fluid w3layouts agileits" alt="Mrs India Branding Magazine Cover">
 
                         </a>
                     </div>
                 </li>
 
+				<li class="portfolio-item2" data-id="id-13" data-type="cat-item-3">
+                    <div>
+                        <a class="image-gal" href="images/the-gallery-branding-on-plates.png" data-gal="prettyPhoto[gallery]">
+
+                            <img src="images/the-gallery-branding-on-plates.png" class="img-fluid w3layouts agileits" alt="The Gallery Branding On Plates">
+
+                        </a>
+                    </div>
+                </li>
+				<li class="portfolio-item2" data-id="id-14" data-type="cat-item-3">
+                    <div>
+                        <a class="image-gal" href="images/the-gallery-branding-do-not-disturb.png" data-gal="prettyPhoto[gallery]">
+
+                            <img src="images/the-gallery-branding-do-not-disturb.png" class="img-fluid w3layouts agileits" alt="The Gallery Branding Do Not Disturb">
+
+                        </a>
+                    </div>
+                </li>
+				<li class="portfolio-item2" data-id="id-15" data-type="cat-item-3">
+                    <div>
+                        <a class="image-gal" href="images/the-gallery-branding-photo-frame.png" data-gal="prettyPhoto[gallery]">
+
+                            <img src="images/the-gallery-branding-photo-frame.png" class="img-fluid w3layouts agileits" alt="The Gallery Branding Photo Frame">
+
+                        </a>
+                    </div>
+                </li>
+				<li class="portfolio-item2" data-id="id-16" data-type="cat-item-3">
+                    <div>
+                        <a class="image-gal" href="images/the-gallery-branding-poster.png" data-gal="prettyPhoto[gallery]">
+
+                            <img src="images/the-gallery-branding-poster.png" class="img-fluid w3layouts agileits" alt="The Gallery Branding Poster">
+
+                        </a>
+                    </div>
+                </li>
+				<li class="portfolio-item2" data-id="id-17" data-type="cat-item-3">
+                    <div>
+                        <a class="image-gal" href="images/matheran-branding-hotel.png" data-gal="prettyPhoto[gallery]">
+
+                            <img src="images/matheran-branding-hotel.png" class="img-fluid w3layouts agileits" alt="Matheran Branding Hotel">
+
+                        </a>
+                    </div>
+                </li>
+				<li class="portfolio-item2" data-id="id-18" data-type="cat-item-3">
+                    <div>
+                        <a class="image-gal" href="images/matheran-branding-products.png" data-gal="prettyPhoto[gallery]">
+
+                            <img src="images/matheran-branding-products.png" class="img-fluid w3layouts agileits" alt="Matheran Branding Products">
+
+                        </a>
+                    </div>
+                </li>
+				<li class="portfolio-item2" data-id="id-18" data-type="cat-item-3">
+                    <div>
+                        <a class="image-gal" href="images/bedazzled-branding.jpg" data-gal="prettyPhoto[gallery]">
+
+                            <img src="images/bedazzled-branding.jpg" class="img-fluid w3layouts agileits" alt="Bedazzled Branding">
+
+                        </a>
+                    </div>
+                </li>
 
 				<!-- New Postfolio End -->
 
 
                 <li class="portfolio-item2" data-id="id-0" data-type="cat-item-4">
                     <div>
-                        <a class="image-gal" href="images/MRS_INDIA_INVITES_MockUp.jpg" data-gal="prettyPhoto[gallery]">
+                        <a class="image-gal" href="images/mrs-india-invites-print-mockup.jpg" data-gal="prettyPhoto[gallery]">
 
-                            <img src="images/MRS_INDIA_INVITES_MockUp.jpg" class="img-fluid w3layouts agileits" alt="">
+                            <img src="images/mrs-india-invites-print-mockup.jpg" class="img-fluid w3layouts agileits" alt="Mrs India Invites Print Mockup">
 
                         </a>
                     </div>
                 </li>
 				<li class="portfolio-item2" data-id="id-1" data-type="cat-item-4">
                     <div>
-                        <a class="image-gal" href="images/MRS_INDIA_NEWSPAPER_AD_MOCKUP.jpg" data-gal="prettyPhoto[gallery]">
+                        <a class="image-gal" href="images/mrs-india-newspaper-ad-print-mockup.jpg" data-gal="prettyPhoto[gallery]">
 
-                            <img src="images/MRS_INDIA_NEWSPAPER_AD_MOCKUP.jpg" class="img-fluid w3layouts agileits" alt="">
+                            <img src="images/mrs-india-newspaper-ad-print-mockup.jpg" class="img-fluid w3layouts agileits" alt="Mrs India Newspaper Ad Print Mockup">
 
                         </a>
                     </div>
                 </li>
 				<li class="portfolio-item2" data-id="id-2" data-type="cat-item-4">
                     <div>
-                        <a class="image-gal" href="images/MRS_INDIA_ITINERARY_MOCKUP.jpg" data-gal="prettyPhoto[gallery]">
+                        <a class="image-gal" href="images/mrs-india-itinerary-print-mockup.jpg" data-gal="prettyPhoto[gallery]">
 
-                            <img src="images/MRS_INDIA_ITINERARY_MOCKUP.jpg" class="img-fluid w3layouts agileits" alt="">
+                            <img src="images/mrs-india-itinerary-print-mockup.jpg" class="img-fluid w3layouts agileits" alt="Mrs India Itinerary Print Mockup">
 
                         </a>
                     </div>
                 </li>
 				<li class="portfolio-item2" data-id="id-3" data-type="cat-item-4">
                     <div>
-                        <a class="image-gal" href="images/MRS_INDIA_Certificate_MOCKUP.jpg" data-gal="prettyPhoto[gallery]">
+                        <a class="image-gal" href="images/mrs-india-certificate-print-mockup.jpg" data-gal="prettyPhoto[gallery]">
 
-                            <img src="images/MRS_INDIA_Certificate_MOCKUP.jpg" class="img-fluid w3layouts agileits" alt="">
+                            <img src="images/mrs-india-certificate-print-mockup.jpg" class="img-fluid w3layouts agileits" alt="Mrs India Certificate Print Mockup">
 
                         </a>
                     </div>
                 </li>
 				<li class="portfolio-item2" data-id="id-4" data-type="cat-item-4">
                     <div>
-                        <a class="image-gal" href="images/MRS_INDIA_Letter_MockUp.jpg" data-gal="prettyPhoto[gallery]">
+                        <a class="image-gal" href="images/mrs-india-letter-print-mockup.jpg" data-gal="prettyPhoto[gallery]">
 
-                            <img src="images/MRS_INDIA_Letter_MockUp.jpg" class="img-fluid w3layouts agileits" alt="">
+                            <img src="images/mrs-india-letter-print-mockup.jpg" class="img-fluid w3layouts agileits" alt="Mrs India Letter Print Mockup">
 
                         </a>
                     </div>
                 </li>
 				<li class="portfolio-item2" data-id="id-5" data-type="cat-item-4">
                     <div>
-                        <a class="image-gal" href="images/MRS_INDIA_STANDEE_MOCKUP.jpg" data-gal="prettyPhoto[gallery]">
+                        <a class="image-gal" href="images/mrs-india-standee-print-mockup.jpg" data-gal="prettyPhoto[gallery]">
 
-                            <img src="images/MRS_INDIA_STANDEE_MOCKUP.jpg" class="img-fluid w3layouts agileits" alt="">
+                            <img src="images/mrs-india-standee-print-mockup.jpg" class="img-fluid w3layouts agileits" alt="Mrs India Standee Print Mockup">
 
                         </a>
                     </div>
                 </li>
 				<li class="portfolio-item2" data-id="id-6" data-type="cat-item-4">
                     <div>
-                        <a class="image-gal" href="images/MRS_INDIA_STAGE_MOCKUP.png" data-gal="prettyPhoto[gallery]">
+                        <a class="image-gal" href="images/mrs-india-stage-print-mockup.png" data-gal="prettyPhoto[gallery]">
 
-                            <img src="images/MRS_INDIA_STAGE_MOCKUP.png" class="img-fluid w3layouts agileits" alt="">
+                            <img src="images/mrs-india-stage-print-mockup.png" class="img-fluid w3layouts agileits" alt="Mrs India Stage Print Mockup">
 
                         </a>
                     </div>
                 </li>
 				<li class="portfolio-item2" data-id="id-7" data-type="cat-item-4">
                     <div>
-                        <a class="image-gal" href="images/TBB_Standee_Mockup.jpg" data-gal="prettyPhoto[gallery]">
+                        <a class="image-gal" href="images/tbb-standee-print-mockup.jpg" data-gal="prettyPhoto[gallery]">
 
-                            <img src="images/TBB_Standee_Mockup.jpg" class="img-fluid w3layouts agileits" alt="">
+                            <img src="images/tbb-standee-print-mockup.jpg" class="img-fluid w3layouts agileits" alt="TBB Standee Print Mockup">
 
                         </a>
                     </div>
@@ -478,181 +597,308 @@ We understand your concerns, and that is why we are here for your service with o
 
 				<li class="portfolio-item2" data-id="id-8" data-type="cat-item-4">
                     <div>
-                        <a class="image-gal" href="images/ARIVU_FLYER_MOCKUP.png" data-gal="prettyPhoto[gallery]">
+                        <a class="image-gal" href="images/arivu-flyer-print-mockup-1.png" data-gal="prettyPhoto[gallery]">
 
-                            <img src="images/ARIVU_FLYER_MOCKUP.png" class="img-fluid w3layouts agileits" alt="">
+                            <img src="images/arivu-flyer-print-mockup-1.png" class="img-fluid w3layouts agileits" alt="Arivu Flyer Print Mockup 1">
 
                         </a>
                     </div>
                 </li>
 				<li class="portfolio-item2" data-id="id-9" data-type="cat-item-4">
                     <div>
-                        <a class="image-gal" href="images/ARIVU_FLYER_MOCKUP02.png" data-gal="prettyPhoto[gallery]">
+                        <a class="image-gal" href="images/arivu-flyer-print-mockup-2.png" data-gal="prettyPhoto[gallery]">
 
-                            <img src="images/ARIVU_FLYER_MOCKUP02.png" class="img-fluid w3layouts agileits" alt="">
+                            <img src="images/arivu-flyer-print-mockup-2.png" class="img-fluid w3layouts agileits" alt="Arivu Flyer Print Mockup 2">
 
                         </a>
                     </div>
                 </li>
 				<li class="portfolio-item2" data-id="id-10" data-type="cat-item-4">
                     <div>
-                        <a class="image-gal" href="images/ARIVU_FLYER_MOCKUP03.png" data-gal="prettyPhoto[gallery]">
+                        <a class="image-gal" href="images/arivu-flyer-print-mockup-3.png" data-gal="prettyPhoto[gallery]">
 
-                            <img src="images/ARIVU_FLYER_MOCKUP03.png" class="img-fluid w3layouts agileits" alt="">
+                            <img src="images/arivu-flyer-print-mockup-3.png" class="img-fluid w3layouts agileits" alt="Arivu Flyer Print Mockup 3">
 
                         </a>
                     </div>
                 </li>
 				<li class="portfolio-item2" data-id="id-11" data-type="cat-item-4">
                     <div>
-                        <a class="image-gal" href="images/ARIVU_FLYER_MOCKUP04.png" data-gal="prettyPhoto[gallery]">
+                        <a class="image-gal" href="images/arivu-flyer-print-mockup-4.png" data-gal="prettyPhoto[gallery]">
 
-                            <img src="images/ARIVU_FLYER_MOCKUP04.png" class="img-fluid w3layouts agileits" alt="">
+                            <img src="images/arivu-flyer-print-mockup-4.png" class="img-fluid w3layouts agileits" alt="Arivu Flyer Print Mockup 4">
 
                         </a>
                     </div>
                 </li>
 				<li class="portfolio-item2" data-id="id-12" data-type="cat-item-4">
                     <div>
-                        <a class="image-gal" href="images/ARIVU_FLYER_MOCKUP05.png" data-gal="prettyPhoto[gallery]">
+                        <a class="image-gal" href="images/arivu-flyer-print-mockup-5.png" data-gal="prettyPhoto[gallery]">
 
-                            <img src="images/ARIVU_FLYER_MOCKUP05.png" class="img-fluid w3layouts agileits" alt="">
+                            <img src="images/arivu-flyer-print-mockup-5.png" class="img-fluid w3layouts agileits" alt="Arivu Flyer Print Mockup 5">
 
                         </a>
                     </div>
                 </li>
 				<li class="portfolio-item2" data-id="id-13" data-type="cat-item-4">
                     <div>
-                        <a class="image-gal" href="images/ARIVU_FLYER_MOCKUP06.png" data-gal="prettyPhoto[gallery]">
+                        <a class="image-gal" href="images/arivu-flyer-print-mockup-6.png" data-gal="prettyPhoto[gallery]">
 
-                            <img src="images/ARIVU_FLYER_MOCKUP06.png" class="img-fluid w3layouts agileits" alt="">
+                            <img src="images/arivu-flyer-print-mockup-6.png" class="img-fluid w3layouts agileits" alt="Arivu Flyer Print Mockup 6">
 
                         </a>
                     </div>
                 </li>
 				<li class="portfolio-item2" data-id="id-14" data-type="cat-item-4">
                     <div>
-                        <a class="image-gal" href="images/ARIVU_FLYER_MOCKUP07.png" data-gal="prettyPhoto[gallery]">
+                        <a class="image-gal" href="images/arivu-flyer-print-mockup-7.png" data-gal="prettyPhoto[gallery]">
 
-                            <img src="images/ARIVU_FLYER_MOCKUP07.png" class="img-fluid w3layouts agileits" alt="">
+                            <img src="images/arivu-flyer-print-mockup-7.png" class="img-fluid w3layouts agileits" alt="Arivu Flyer Print Mockup 7">
 
                         </a>
                     </div>
                 </li>
 				<li class="portfolio-item2" data-id="id-15" data-type="cat-item-4">
                     <div>
-                        <a class="image-gal" href="images/ARIVU_FLYER_MOCKUP08.png" data-gal="prettyPhoto[gallery]">
+                        <a class="image-gal" href="images/arivu-flyer-print-mockup-8.png" data-gal="prettyPhoto[gallery]">
 
-                            <img src="images/ARIVU_FLYER_MOCKUP08.png" class="img-fluid w3layouts agileits" alt="">
+                            <img src="images/arivu-flyer-print-mockup-8.png" class="img-fluid w3layouts agileits" alt="Arivu Flyer Print Mockup 8">
 
                         </a>
                     </div>
                 </li>
 				<li class="portfolio-item2" data-id="id-16" data-type="cat-item-4">
                     <div>
-                        <a class="image-gal" href="images/ARIVU_FLYER_MOCKUP09.png" data-gal="prettyPhoto[gallery]">
+                        <a class="image-gal" href="images/arivu-flyer-print-mockup-9.png" data-gal="prettyPhoto[gallery]">
 
-                            <img src="images/ARIVU_FLYER_MOCKUP09.png" class="img-fluid w3layouts agileits" alt="">
+                            <img src="images/arivu-flyer-print-mockup-9.png" class="img-fluid w3layouts agileits" alt="Arivu Flyer Print Mockup 9">
 
                         </a>
                     </div>
                 </li>
 				<li class="portfolio-item2" data-id="id-17" data-type="cat-item-4">
                     <div>
-                        <a class="image-gal" href="images/ARIVU_INVITE_MOCKUP.png" data-gal="prettyPhoto[gallery]">
+                        <a class="image-gal" href="images/arivu-invite-print-mockup.png" data-gal="prettyPhoto[gallery]">
 
-                            <img src="images/ARIVU_INVITE_MOCKUP.png" class="img-fluid w3layouts agileits" alt="">
+                            <img src="images/arivu-invite-print-mockup.png" class="img-fluid w3layouts agileits" alt="Arivu Invite Print Mockup">
 
                         </a>
                     </div>
                 </li>
 				<li class="portfolio-item2" data-id="id-18" data-type="cat-item-4">
                     <div>
-                        <a class="image-gal" href="images/ARIVU_STANDEE_MOCKUP.png" data-gal="prettyPhoto[gallery]">
+                        <a class="image-gal" href="images/arivu-standee-print-mockup.png" data-gal="prettyPhoto[gallery]">
 
-                            <img src="images/ARIVU_STANDEE_MOCKUP.png" class="img-fluid w3layouts agileits" alt="">
+                            <img src="images/arivu-standee-print-mockup.png" class="img-fluid w3layouts agileits" alt="Arivu Standee Print Mockup">
 
                         </a>
                     </div>
                 </li>
 				<li class="portfolio-item2" data-id="id-19" data-type="cat-item-4">
                     <div>
-                        <a class="image-gal" href="images/EARTH_HOUR_MOCKUP.png" data-gal="prettyPhoto[gallery]">
+                        <a class="image-gal" href="images/earth-hour-print-mockup.png" data-gal="prettyPhoto[gallery]">
 
-                            <img src="images/EARTH_HOUR_MOCKUP.png" class="img-fluid w3layouts agileits" alt="">
+                            <img src="images/earth-hour-print-mockup.png" class="img-fluid w3layouts agileits" alt="Earth Hour Print Mockup">
 
                         </a>
                     </div>
                 </li>
 				<li class="portfolio-item2" data-id="id-20" data-type="cat-item-4">
                     <div>
-                        <a class="image-gal" href="images/PLAY_STANDEE_MOCKUP.png" data-gal="prettyPhoto[gallery]">
+                        <a class="image-gal" href="images/play-standee-print-mockup.png" data-gal="prettyPhoto[gallery]">
 
-                            <img src="images/PLAY_STANDEE_MOCKUP.png" class="img-fluid w3layouts agileits" alt="">
+                            <img src="images/play-standee-print-mockup.png" class="img-fluid w3layouts agileits" alt="Play Standee Print Mockup">
 
                         </a>
                     </div>
                 </li>
 				<li class="portfolio-item2" data-id="id-21" data-type="cat-item-4">
                     <div>
-                        <a class="image-gal" href="images/PLAY_MENU_MOCKUP02.png" data-gal="prettyPhoto[gallery]">
+                        <a class="image-gal" href="images/play-menu-print-mockup-2.png" data-gal="prettyPhoto[gallery]">
 
-                            <img src="images/PLAY_MENU_MOCKUP02.png" class="img-fluid w3layouts agileits" alt="">
+                            <img src="images/play-menu-print-mockup-2.png" class="img-fluid w3layouts agileits" alt="Play Menu Print Mockup 2">
 
                         </a>
                     </div>
                 </li>
 				<li class="portfolio-item2" data-id="id-22" data-type="cat-item-4">
                     <div>
-                        <a class="image-gal" href="images/PLAY_TENT_MOCKUP.png" data-gal="prettyPhoto[gallery]">
+                        <a class="image-gal" href="images/play-tent-print-mockup.png" data-gal="prettyPhoto[gallery]">
 
-                            <img src="images/PLAY_TENT_MOCKUP.png" class="img-fluid w3layouts agileits" alt="">
+                            <img src="images/play-tent-print-mockup.png" class="img-fluid w3layouts agileits" alt="Play Tent Print Mockup">
 
                         </a>
                     </div>
                 </li>
 				<li class="portfolio-item2" data-id="id-23" data-type="cat-item-4">
                     <div>
-                        <a class="image-gal" href="images/TBB_MENU_MOCKUP.png" data-gal="prettyPhoto[gallery]">
+                        <a class="image-gal" href="images/tbb-menu-print-mockup.png" data-gal="prettyPhoto[gallery]">
 
-                            <img src="images/TBB_MENU_MOCKUP.png" class="img-fluid w3layouts agileits" alt="">
+                            <img src="images/tbb-menu-print-mockup.png" class="img-fluid w3layouts agileits" alt="TBB Menu Print Mockup">
 
                         </a>
                     </div>
                 </li>
 
+				<li class="portfolio-item2" data-id="id-24" data-type="cat-item-4">
+                    <div>
+                        <a class="image-gal" href="images/chillies-print-mockup.png" data-gal="prettyPhoto[gallery]">
+
+                            <img src="images/chillies-print-mockup.png" class="img-fluid w3layouts agileits" alt="Chillies Print Mockup">
+
+                        </a>
+                    </div>
+                </li>
+				<li class="portfolio-item2" data-id="id-25" data-type="cat-item-4">
+                    <div>
+                        <a class="image-gal" href="images/chillies-menu-print.png" data-gal="prettyPhoto[gallery]">
+
+                            <img src="images/chillies-menu-print.png" class="img-fluid w3layouts agileits" alt="Chillies Menu Print">
+
+                        </a>
+                    </div>
+                </li>
+				<li class="portfolio-item2" data-id="id-26" data-type="cat-item-4">
+                    <div>
+                        <a class="image-gal" href="images/keya_product-print-1.png" data-gal="prettyPhoto[gallery]">
+
+                            <img src="images/keya_product-print-1.png" class="img-fluid w3layouts agileits" alt="Keya Product Print 1">
+
+                        </a>
+                    </div>
+                </li>
+				<li class="portfolio-item2" data-id="id-27" data-type="cat-item-4">
+                    <div>
+                        <a class="image-gal" href="images/keya_product-print-2.png" data-gal="prettyPhoto[gallery]">
+
+                            <img src="images/keya_product-print-2.png" class="img-fluid w3layouts agileits" alt="Keya Product Print 2">
+
+                        </a>
+                    </div>
+                </li>
+				<li class="portfolio-item2" data-id="id-28" data-type="cat-item-4">
+                    <div>
+                        <a class="image-gal" href="images/marimbula-product-print.png" data-gal="prettyPhoto[gallery]">
+
+                            <img src="images/marimbula-product-print.png" class="img-fluid w3layouts agileits" alt="Marimbula Product Print">
+
+                        </a>
+                    </div>
+                </li>
+				<li class="portfolio-item2" data-id="id-29" data-type="cat-item-4">
+                    <div>
+                        <a class="image-gal" href="images/play-menu-print.png" data-gal="prettyPhoto[gallery]">
+
+                            <img src="images/play-menu-print.png" class="img-fluid w3layouts agileits" alt="Play Menu Print">
+
+                        </a>
+                    </div>
+                </li>
+				<li class="portfolio-item2" data-id="id-30" data-type="cat-item-4">
+                    <div>
+                        <a class="image-gal" href="images/thetruechef-print.png" data-gal="prettyPhoto[gallery]">
+
+                            <img src="images/thetruechef-print.png" class="img-fluid w3layouts agileits" alt="The True Chef Print">
+
+                        </a>
+                    </div>
+                </li>
+
+				<li class="portfolio-item2" data-id="id-31" data-type="cat-item-4">
+                    <div>
+                        <a class="image-gal" href="images/lotus-print.png" data-gal="prettyPhoto[gallery]">
+
+                            <img src="images/lotus-print.png" class="img-fluid w3layouts agileits" alt="Lotus Print">
+
+                        </a>
+                    </div>
+                </li>
+				<li class="portfolio-item2" data-id="id-32" data-type="cat-item-4">
+                    <div>
+                        <a class="image-gal" href="images/shine-print.png" data-gal="prettyPhoto[gallery]">
+
+                            <img src="images/shine-print.png" class="img-fluid w3layouts agileits" alt="Shine Print">
+
+                        </a>
+                    </div>
+                </li>
+				<li class="portfolio-item2" data-id="id-33" data-type="cat-item-4">
+                    <div>
+                        <a class="image-gal" href="images/te3n-movie-poster-print.png" data-gal="prettyPhoto[gallery]">
+
+                            <img src="images/te3n-movie-poster-print.png" class="img-fluid w3layouts agileits" alt="Te3n Movie Poster Print">
+
+                        </a>
+                    </div>
+                </li>
+				<li class="portfolio-item2" data-id="id-34" data-type="cat-item-4">
+                    <div>
+                        <a class="image-gal" href="images/te3n-movie-poster-print-1.png" data-gal="prettyPhoto[gallery]">
+
+                            <img src="images/te3n-movie-poster-print-1.png" class="img-fluid w3layouts agileits" alt="Te3n Movie Poster Print 1">
+
+                        </a>
+                    </div>
+                </li>
+				<li class="portfolio-item2" data-id="id-35" data-type="cat-item-4">
+                    <div>
+                        <a class="image-gal" href="images/te3n-movie-poster-print-2.png" data-gal="prettyPhoto[gallery]">
+
+                            <img src="images/te3n-movie-poster-print-2.png" class="img-fluid w3layouts agileits" alt="Te3n Movie Poster Print 2">
+
+                        </a>
+                    </div>
+                </li>
+				<li class="portfolio-item2" data-id="id-36" data-type="cat-item-4">
+                    <div>
+                        <a class="image-gal" href="images/te3n-movie-poster-print-3.png" data-gal="prettyPhoto[gallery]">
+
+                            <img src="images/te3n-movie-poster-print-3.png" class="img-fluid w3layouts agileits" alt="Te3n Movie Poster Print 3">
+
+                        </a>
+                    </div>
+                </li>
+				<li class="portfolio-item2" data-id="id-37" data-type="cat-item-4">
+                    <div>
+                        <a class="image-gal" href="images/thetruechef-print-1.png" data-gal="prettyPhoto[gallery]">
+
+                            <img src="images/thetruechef-print-1.png" class="img-fluid w3layouts agileits" alt="The True Chef Print 1">
+
+                        </a>
+                    </div>
+                </li>
 
 
 
 
                 <li class="portfolio-item2" data-id="id-0" data-type="cat-item-2">
                     <div>
-                        <a class="image-gal" href="images/OTB_cover_Mockup.jpg" data-gal="prettyPhoto[gallery]">
+                        <a class="image-gal" href="images/otb-cover-mockup-social-media-1.jpg" data-gal="prettyPhoto[gallery]">
 
-                            <img src="images/OTB_cover_Mockup.jpg" class="img-fluid w3layouts agileits" alt="">
+                            <img src="images/otb-cover-mockup-social-media-1.jpg" class="img-fluid w3layouts agileits" alt="OTB Cover Mockup 1 Social Media">
 
                         </a>
                     </div>
                 </li>
 				<li class="portfolio-item2" data-id="id-1" data-type="cat-item-2">
                     <div>
-                        <a class="image-gal" href="images/OTB_cover_Mockup02.jpg" data-gal="prettyPhoto[gallery]">
+                        <a class="image-gal" href="images/otb-cover-mockup-social-media-2.jpg" data-gal="prettyPhoto[gallery]">
 
-                            <img src="images/OTB_cover_Mockup02.jpg" class="img-fluid w3layouts agileits" alt="">
+                            <img src="images/otb-cover-mockup-social-media-2.jpg" class="img-fluid w3layouts agileits" alt="OTB Cover Mockup 2 Social Media">
 
                         </a>
                     </div>
                 </li>
 				<li class="portfolio-item2" data-id="id-2" data-type="cat-item-2">
                     <div>
-                        <a class="image-gal" href="images/OTB_cover_Mockup03.jpg" data-gal="prettyPhoto[gallery]">
+                        <a class="image-gal" href="images/otb-cover-mockup-social-media-3.jpg" data-gal="prettyPhoto[gallery]">
 
-                            <img src="images/OTB_cover_Mockup03.jpg" class="img-fluid w3layouts agileits" alt="">
+                            <img src="images/otb-cover-mockup-social-media-3.jpg" class="img-fluid w3layouts agileits" alt="OTB Cover Mockup 3 Social Media">
 
                         </a>
                     </div>
                 </li>
-				<li class="portfolio-item2" data-id="id-3" data-type="cat-item-2">
+				<!--<li class="portfolio-item2" data-id="id-3" data-type="cat-item-2">
                     <div>
                         <a class="image-gal" href="images/OTB_cover_Mockup04.jpg" data-gal="prettyPhoto[gallery]">
 
@@ -660,75 +906,140 @@ We understand your concerns, and that is why we are here for your service with o
 
                         </a>
                     </div>
-                </li>
+                </li>-->
 				<li class="portfolio-item2" data-id="id-4" data-type="cat-item-2">
                     <div>
-                        <a class="image-gal" href="images/Play_cover_Mockup.jpg" data-gal="prettyPhoto[gallery]">
+                        <a class="image-gal" href="images/play-cover-mockup-social-media-1.jpg" data-gal="prettyPhoto[gallery]">
 
-                            <img src="images/Play_cover_Mockup.jpg" class="img-fluid w3layouts agileits" alt="">
+                            <img src="images/play-cover-mockup-social-media-1.jpg" class="img-fluid w3layouts agileits" alt="Play Cover Mockup 1 Social Media">
 
                         </a>
                     </div>
                 </li>
 				<li class="portfolio-item2" data-id="id-5" data-type="cat-item-2">
                     <div>
-                        <a class="image-gal" href="images/Play_cover_Mockup02.jpg" data-gal="prettyPhoto[gallery]">
+                        <a class="image-gal" href="images/play-cover-mockup-social-media-2.jpg" data-gal="prettyPhoto[gallery]">
 
-                            <img src="images/Play_cover_Mockup02.jpg" class="img-fluid w3layouts agileits" alt="">
+                            <img src="images/play-cover-mockup-social-media-2.jpg" class="img-fluid w3layouts agileits" alt="Play Cover Mockup 2 Social Media">
 
                         </a>
                     </div>
                 </li>
 				<li class="portfolio-item2" data-id="id-6" data-type="cat-item-2">
                     <div>
-                        <a class="image-gal" href="images/Social_media.jpg" data-gal="prettyPhoto[gallery]">
+                        <a class="image-gal" href="images/mrs-india-social-media-1.jpg" data-gal="prettyPhoto[gallery]">
 
-                            <img src="images/Social_media.jpg" class="img-fluid w3layouts agileits" alt="">
+                            <img src="images/mrs-india-social-media-1.jpg" class="img-fluid w3layouts agileits" alt="Mrs India Social Media Mockup 1">
 
                         </a>
                     </div>
                 </li>
 				<li class="portfolio-item2" data-id="id-7" data-type="cat-item-2">
                     <div>
-                        <a class="image-gal" href="images/Social_media02.jpg" data-gal="prettyPhoto[gallery]">
+                        <a class="image-gal" href="images/mrs-india-social-media-2.jpg" data-gal="prettyPhoto[gallery]">
 
-                            <img src="images/Social_media02.jpg" class="img-fluid w3layouts agileits" alt="">
+                            <img src="images/mrs-india-social-media-2.jpg" class="img-fluid w3layouts agileits" alt="Mrs India Social Media Mockup 2">
 
                         </a>
                     </div>
                 </li>
 				<li class="portfolio-item2" data-id="id-8" data-type="cat-item-2">
                     <div>
-                        <a class="image-gal" href="images/Social_media03.jpg" data-gal="prettyPhoto[gallery]">
+                        <a class="image-gal" href="images/mrs-india-social-media-3.jpg" data-gal="prettyPhoto[gallery]">
 
-                            <img src="images/Social_media03.jpg" class="img-fluid w3layouts agileits" alt="">
+                            <img src="images/mrs-india-social-media-3.jpg" class="img-fluid w3layouts agileits" alt="Mrs India Social Media Mockup 3">
 
                         </a>
                     </div>
                 </li>
 				<li class="portfolio-item2" data-id="id-9" data-type="cat-item-2">
                     <div>
-                        <a class="image-gal" href="images/TBB_cover_Mockup.jpg" data-gal="prettyPhoto[gallery]">
+                        <a class="image-gal" href="images/tbb-cover-mockup-social-media-1.jpg" data-gal="prettyPhoto[gallery]">
 
-                            <img src="images/TBB_cover_Mockup.jpg" class="img-fluid w3layouts agileits" alt="">
+                            <img src="images/tbb-cover-mockup-social-media-1.jpg" class="img-fluid w3layouts agileits" alt="TBB Cover Mockup 1 Social Media">
 
                         </a>
                     </div>
                 </li>
 				<li class="portfolio-item2" data-id="id-10" data-type="cat-item-2">
                     <div>
-                        <a class="image-gal" href="images/TBB_cover_Mockup02.jpg" data-gal="prettyPhoto[gallery]">
+                        <a class="image-gal" href="images/tbb-cover-mockup-social-media-2.jpg" data-gal="prettyPhoto[gallery]">
 
-                            <img src="images/TBB_cover_Mockup02.jpg" class="img-fluid w3layouts agileits" alt="">
+                            <img src="images/tbb-cover-mockup-social-media-2.jpg" class="img-fluid w3layouts agileits" alt="TBB Cover Mockup 2 Social Media">
 
                         </a>
                     </div>
                 </li>
 				<li class="portfolio-item2" data-id="id-11" data-type="cat-item-2">
                     <div>
-                        <a class="image-gal" href="images/TBB_cover_Mockup03.jpg" data-gal="prettyPhoto[gallery]">
+                        <a class="image-gal" href="images/tbb-cover-mockup-social-media-3.jpg" data-gal="prettyPhoto[gallery]">
 
-                            <img src="images/TBB_cover_Mockup03.jpg" class="img-fluid w3layouts agileits" alt="">
+                            <img src="images/tbb-cover-mockup-social-media-3.jpg" class="img-fluid w3layouts agileits" alt="TBB Cover Mockup 3 Social Media">
+
+                        </a>
+                    </div>
+                </li>
+
+
+				<li class="portfolio-item2" data-id="id-12" data-type="cat-item-2">
+                    <div>
+                        <a class="image-gal" href="images/play-social-media-1.png" data-gal="prettyPhoto[gallery]">
+
+                            <img src="images/play-social-media-1.png" class="img-fluid w3layouts agileits" alt="Play Social Media Mockup">
+
+                        </a>
+                    </div>
+                </li>
+				<li class="portfolio-item2" data-id="id-13" data-type="cat-item-2">
+                    <div>
+                        <a class="image-gal" href="images/play-tbb-social-media-1.png" data-gal="prettyPhoto[gallery]">
+
+                            <img src="images/play-tbb-social-media-1.png" class="img-fluid w3layouts agileits" alt="Play Tbb Social Media Creative 1">
+
+                        </a>
+                    </div>
+                </li>
+				<li class="portfolio-item2" data-id="id-14" data-type="cat-item-2">
+                    <div>
+                        <a class="image-gal" href="images/play-tbb-social-media-2.png" data-gal="prettyPhoto[gallery]">
+
+                            <img src="images/play-tbb-social-media-2.png" class="img-fluid w3layouts agileits" alt="Play Tbb Social Media Creative 2">
+
+                        </a>
+                    </div>
+                </li>
+				<li class="portfolio-item2" data-id="id-15" data-type="cat-item-2">
+                    <div>
+                        <a class="image-gal" href="images/tbb-social-media-creative-1.png" data-gal="prettyPhoto[gallery]">
+
+                            <img src="images/tbb-social-media-creative-1.png" class="img-fluid w3layouts agileits" alt="TBB Social Media Creative 1">
+
+                        </a>
+                    </div>
+                </li>
+				<li class="portfolio-item2" data-id="id-16" data-type="cat-item-2">
+                    <div>
+                        <a class="image-gal" href="images/tbb-social-media-creative-2.png" data-gal="prettyPhoto[gallery]">
+
+                            <img src="images/tbb-social-media-creative-2.png" class="img-fluid w3layouts agileits" alt="TBB Social Media Creative 2">
+
+                        </a>
+                    </div>
+                </li>
+				<li class="portfolio-item2" data-id="id-17" data-type="cat-item-2">
+                    <div>
+                        <a class="image-gal" href="images/tbb-social-media-creative-3.png" data-gal="prettyPhoto[gallery]">
+
+                            <img src="images/tbb-social-media-creative-3.png" class="img-fluid w3layouts agileits" alt="TBB Social Media Creative 3">
+
+                        </a>
+                    </div>
+                </li>
+				<li class="portfolio-item2" data-id="id-18" data-type="cat-item-2">
+                    <div>
+                        <a class="image-gal" href="images/tbb-social-media-creative-4.png" data-gal="prettyPhoto[gallery]">
+
+                            <img src="images/tbb-social-media-creative-4.png" class="img-fluid w3layouts agileits" alt="TBB Social Media Creative 4">
 
                         </a>
                     </div>
@@ -746,25 +1057,24 @@ We understand your concerns, and that is why we are here for your service with o
             <div class="row w3ls-interior-design-grids py-5">
                 <div class="col-lg-6 w3ls-interior-design-grid-left">
                     <figure class="effect-lexi">
-                        <img src="images/g1.jpg" alt="" class="img-fluid" />
+                        <img src="images/akki-creative-digital-marketing.png" alt="Akki Creative Digital Marketing Person" class="img-fluid" />
                         <figcaption>
-                            <h3>Responsive
+                            <!--<h3>Responsive
                                 <span>Design</span>
-                            </h3>
-                            <p>If you think math is hard, try web design.</p>
+                            </h3>-->
+                            <p>Without facts and principles, data is useless.</p>
                         </figcaption>
                     </figure>
                 </div>
                 <div class="col-lg-6 w3ls-interior-design-grid-right">
-                    <h3 class="mt-4">Better ways to create
-                        <span>Design</span>
+                    <h3 class="mt-4">Data driven approach to
+                        <span>digital marketing</span>
                     </h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate pariatur. Excepteur
-                        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit laborum.
-                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                            et veniam.</span>
+                    <p>Before digital marketing came into existence the brands had a linear marketing approach towards their customers.
+A brand never knew what customers were exactly thinking about their products/services which led to a huge
+communication gap between them. Digital Marketing which has bridged the gap between the customers and the
+brand, not only helps in marketing the products but also helps brand provide online customer support through
+24/7 services to make customers feel supported and valued.
                     </p>
                 </div>
             </div>
@@ -773,22 +1083,21 @@ We understand your concerns, and that is why we are here for your service with o
                     <h3>Better ways to create
                         <span>Design</span>
                     </h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate pariatur. Excepteur
-                        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit laborum.
-                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                            et veniam.</span>
+                    <p>Designing is a combination of creativity and emotion to generate a perfect piece. It focusses on exploring,
+redefining, managing, prototyping and most importantly trendspotting. In today's era the trends are ever changing
+and dynamic, therefore we keep ourselves updated to fulfil your requirements with flying colors. After all, it is a it
+is a visual communication and it has to convey every detail of your brand. Devinefruit uses the most efficient tools
+like illustrator and adobe photoshop to do the job for you.
                     </p>
                 </div>
                 <div class="col-lg-6 w3ls-interior-design-grid-left">
                     <figure class="effect-lexi">
-                        <img src="images/g4.jpg" alt="" class="img-fluid mt-4" />
+                        <img src="images/poo-creative-designer.png" alt="Poo Creative Head Designer & Founder" class="img-fluid" />
                         <figcaption>
-                            <h3>Creative
+                            <!--<h3>Creative
                                 <span>Design</span>
-                            </h3>
-                            <p>Technology over technique produces emotionless design.</p>
+                            </h3>-->
+                            <p>Good design is obvious great design is transparent.</p>
                         </figcaption>
                     </figure>
                 </div>
@@ -796,25 +1105,22 @@ We understand your concerns, and that is why we are here for your service with o
             <div class="row w3ls-interior-design-grids py-5">
                 <div class="col-lg-6 w3ls-interior-design-grid-left">
                     <figure class="effect-lexi">
-                        <img src="images/g5.jpg" alt="" class="img-fluid" />
+                        <img src="images/prash-creative-technology.png" alt="Prash Creative Technology Head" class="img-fluid" />
                         <figcaption>
-                            <h3>Website
+                            <!--<h3>Website
                                 <span>Design</span>
-                            </h3>
-                            <p>Good design is obvious. Great design is transparent.</p>
+                            </h3>-->
+                            <p>If you think Math is hard, try Website Design.</p>
                         </figcaption>
                     </figure>
                 </div>
                 <div class="col-lg-6 w3ls-interior-design-grid-right">
-                    <h3 class="mt-4">Better ways to create
-                        <span>Design</span>
+                    <h3 class="mt-4">Practical problems solving
+                        <span>TECHNOLOGY</span>
                     </h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate pariatur. Excepteur
-                        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit laborum.
-                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                            et veniam.</span>
+                    <p>Everything about your website - including the content, the way it looks, and the way it works - is determined by the website design. As the name of this service suggests, it is all about giving services to the users of technology products or services.
+With the increasing use of technology in modern times, there is a growing requirement to provide technical
+support and Devinefruit exactly does this, with a pinch of personalized approach.
                     </p>
                 </div>
             </div>
@@ -838,7 +1144,7 @@ We understand your concerns, and that is why we are here for your service with o
     <!-- video ends here -->
 
     <!-- team starts here -->
-    <div class="container content text-center py-5" id="section5">
+    <div class="container content text-center py-5" id="team">
         <header class="w3-heading py-lg-5 pb-md-5 pb-4">
             <h3>Our Great Team</h3>
             <!--<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>-->
@@ -849,7 +1155,7 @@ We understand your concerns, and that is why we are here for your service with o
             <div class="col-md-4 col-sm-6">
                 <div class="team-members">
                     <div class="team-avatar">
-                        <img class="img-fluid" src="images/AK02.png" alt="">
+                        <img class="img-fluid" src="images/akki-digital-marketing.png" alt="Akki Digital Marketing">
                     </div>
                     <div class="team-desc">
                         <h4>Akansha Khanna</h4>
@@ -877,7 +1183,7 @@ We understand your concerns, and that is why we are here for your service with o
             <div class="col-md-4 col-sm-6">
                 <div class="team-members">
                     <div class="team-avatar">
-                        <img class="img-fluid" src="images/PM.JPG" alt="">
+                        <img class="img-fluid" src="images/poo-designer.jpg" alt="Poo Designer & Founder">
                     </div>
                     <div class="team-desc">
                         <h4>Pooja Mishra</h4>
@@ -905,7 +1211,7 @@ We understand your concerns, and that is why we are here for your service with o
             <div class="col-md-4 col-sm-6 offset-sm-3 offset-md-0">
                 <div class="team-members">
                     <div class="team-avatar">
-                        <img class="img-fluid" src="images/PN.png" alt="">
+                        <img class="img-fluid" src="images/prash-technology.png" alt="Prash Technology Head / Hosting Solution">
                     </div>
                     <div class="team-desc">
                         <h4>Prashant Naik</h4>
@@ -966,10 +1272,10 @@ We understand your concerns, and that is why we are here for your service with o
     <!-- /stats -->
 
     <!-- news starts here -->
-    <section class="news pb-5" id="section6">
+    <section class="news pb-5" id="clients">
         <div class="container">
             <header class="w3-heading py-lg-5 pb-md-5 pb-4 text-center">
-                <h3>Our Clients</h3>
+                <h3 class="clientheader">Our Clients</h3>
                 <!--<p>about client</p>-->
             </header>
             <!-- //end heading -->
@@ -980,7 +1286,7 @@ We understand your concerns, and that is why we are here for your service with o
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">PROVENTUS HR</h5>
-                        <p class="card-text">ProventusHR is a HR consulting firm, founded with a mission to partner with its clients in the growth process by providing integrated solutions to their HR needs.</p>
+                        <p class="card-text">ProventusHR is a HR advisory firm. They help businesses performance through people productivity and provide processes, tools & training for a successful Human Capital Strategy Deployment.</p>
                         <a href="#" class="btn more p-0 mt-3" data-toggle="modal" data-target="#exampleModal">Read More</a>
                         <!-- Modal -->
                         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -994,7 +1300,7 @@ We understand your concerns, and that is why we are here for your service with o
                                     </div>
                                     <div class="modal-body">
                                         <img class="card-img-top" src="images/ProventusHR.png" alt="PROVENTUS HR">
-                                        <p class="my-3">ProventusHR is a HR consulting firm, founded with a mission to partner with its clients in the growth process by providing integrated solutions to their HR needs.</p>
+                                        <p class="my-3">ProventusHR is a HR advisory firm. They help businesses performance through people productivity and provide processes, tools & training for a successful Human Capital Strategy Deployment. The organization work to improve sales, productivity, quality, organization, company, culture, and employee engagement.</p>
                                     </div>
                                 </div>
                             </div>
@@ -1007,7 +1313,7 @@ We understand your concerns, and that is why we are here for your service with o
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">MRS INDIA WORLD 2019-20</h5>
-                        <p class="card-text">Mrs India Inc is the most credible beauty pageant for married women. Mrs India Inc is associated with the oldest and the world most premium beauty Pageant for married women MRS WORLD.</p>
+                        <p class="card-text">Mrs India Inc is the most credible beauty pageant, associated with the oldest and the world most premium beauty Pageant  for married women MRS WORLD. It provides a global Platform to the winner</p>
                         <a href="#" class="btn more p-0 mt-3" data-toggle="modal" data-target="#exampleModal5">Read More</a>
                         <!-- Modal -->
                         <div class="modal fade" id="exampleModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel5" aria-hidden="true">
@@ -1021,8 +1327,7 @@ We understand your concerns, and that is why we are here for your service with o
                                     </div>
                                     <div class="modal-body">
 										<img class="card-img-top" src="images/mrs_india_world.png" alt="Card image cap">
-                                        <p class="my-3">Mrs India Inc is the most credible beauty pageant for married women. Mrs India Inc is associated with the oldest and the world most premium beauty Pageant for married women MRS WORLD. Mrs India Inc is the official licence holder and the national director of MRS INDIA WORLD. <br><br>
-Mrs India Inc provides a global Platform to the winner as they represent the country at the world platform.</p>
+                                        <p class="my-3">Mrs India Inc is the most credible beauty pageant, associated with the oldest and the world most premium beauty Pageant  for married women MRS WORLD. It provides a global Platform to the winner as they represent the country at the world platform. Mrs India Inc is the official licence holder and the national director of MRS INDIA WORLD.</p>
                                     </div>
                                 </div>
                             </div>
@@ -1039,7 +1344,7 @@ Mrs India Inc provides a global Platform to the winner as they represent the cou
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">ARIVUPRO</h5>
-                        <p class="card-text">Started as a group of individuals who were teaching for CA and CS across different colleges , now we are a team of 26 individuals who are passionate about teaching started this Institute , delivering more than 80 percent results in the CA and CS with about 75 plus ranks and around 238 ranks in CIMA and ACCA .</p>
+                        <p class="card-text">An education institute teaching CA and CS courses across different colleges. Delivering more than 80 percent results in the CA and CS</p>
                         <a href="#" class="btn more p-0 mt-3" data-toggle="modal" data-target="#exampleModal6">Read More</a>
                         <!-- Modal -->
                         <div class="modal fade" id="exampleModal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel6" aria-hidden="true">
@@ -1053,7 +1358,7 @@ Mrs India Inc provides a global Platform to the winner as they represent the cou
                                     </div>
                                     <div class="modal-body">
                                         <img class="card-img-top" src="images/arivupro.png" alt="ARIVUPRO">
-                                        <p class="my-3">Started as a group of individuals who were teaching for CA and CS across different colleges , now we are a team of 26 individuals who are passionate about teaching started this Institute , delivering more than 80 percent results in the CA and CS with about 75 plus ranks and around 238 ranks in CIMA and ACCA . Professional courses can be fun if done a right way has been a mantra at Arivupro Academy</p>
+                                        <p class="my-3">An education institute teaching CA and CS courses across different colleges. Delivering more than 80 percent results in the CA and CS with about 75 plus ranks and around 238 ranks in CIMA and ACCA .</p>
                                     </div>
                                 </div>
                             </div>
@@ -1067,10 +1372,10 @@ Mrs India Inc provides a global Platform to the winner as they represent the cou
     <!-- news ends here -->
 
     <!-- Testimonials Section -->
-    <section class="testimonials content-section" id="section7">
+    <section class="testimonials content-section" id="testimonials">
         <div class="container">
             <header class="w3-heading py-lg-5 pt-5 text-center">
-                <h3 class="text-white">Testimonials</h3>
+                <h3 class="text-yellow">Testimonials</h3>
             </header>
             <!-- //end heading -->
             <div class="row text-center">
@@ -1081,7 +1386,7 @@ Mrs India Inc provides a global Platform to the winner as they represent the cou
                         <div class="item">
                             <p class="speech">I had started my firm back in 2017, as it was a startup, I needed everything related to branding. Then I found Devinefruit online. Pooja has given me all the solutions  under one roof. She understands what I actually wanted. She envisions a client's requirement and delivers on time. Starting from the colour combinations, the right font, a unique logo she has an amazing vision. I highly recommend working with Devinefruit. (Hassle free)</p>
                             <div class="client-info">
-                                <img src="images/rk.png" alt="" />
+                                <img src="images/rk.png" alt="Founder ProventusHR - Client" />
                                 <h4>Mr Ramakrishna</h4>
                                 <span>Founder ProventusHR</span>
                             </div>
@@ -1091,7 +1396,7 @@ Mrs India Inc provides a global Platform to the winner as they represent the cou
                         <div class="item">
                             <p class="speech">I was looking for an agency that can give me all creative & marketing services because I did not want to run around behind so many agencies. Then somebody recommended me Devinefruit and I found all services like, Social Media, Printing, Branding etc. Basically everything with them. I really liked their work!</p>
                             <div class="client-info">
-                                <img src="images/pradeep.png" alt="" />
+                                <img src="images/pradeep.png" alt="Arivupro Academy - Client" />
                                 <h4>Mr Pradeep Nagaraj</h4>
                                 <span>Director Arivupro Academy</span>
                             </div>
@@ -1101,7 +1406,7 @@ Mrs India Inc provides a global Platform to the winner as they represent the cou
                         <div class="item">
                             <p class="speech">I gave Pooja a big project for Mrs. India World 2019-20 and she has done an excellent job. I needed her to work specifically on the Social Media Creatives & Print Branding and it was a great job done!  I appreciate that constant attention to detail was provided and nevertheless timely delivery. Congratulations Pooja for great work!</p>
                             <div class="client-info">
-                                <img src="images/mohini.png" alt="" />
+                                <img src="images/mohini.png" alt="Mrs India - Client" />
                                 <h4>Mrs Mohini Sharma</h4>
                                 <span>Former Mrs India 2016 & Founder/Chairperson of Mrs India Inc</span>
                             </div>
@@ -1122,10 +1427,10 @@ Mrs India Inc provides a global Platform to the winner as they represent the cou
 
 
     <!-- Contact section -->
-    <section class="contact content-section" id="section8">
+    <section class="contact content-section" id="contact">
         <div class="container">
             <header class="w3-heading py-lg-5 pt-5 text-center">
-                <h3>Contact Us</h3>
+                <h3 class="contactusheader">Contact Us</h3>
             </header>
             <!-- //end heading -->
             <div class="row form-container py-3">
@@ -1166,8 +1471,8 @@ Mrs India Inc provides a global Platform to the winner as they represent the cou
                                 <i class="fa fa-envelope fa-fw mr-2"></i>
                                 <a href="mailto:pentodevinefruit@gmail.com">pentodevinefruit@gmail.com</a>
                             </li>
-                            <li class="my-3">
-                                <i class="fa fa-phone fa-fw mr-2"></i>+91-8454852181</li>
+                            <!--<li class="my-3">
+                                <i class="fa fa-phone fa-fw mr-2"></i>+91-8454852181</li>-->
                         </ul>
                     </address>
                 </div>
@@ -1272,6 +1577,20 @@ Mrs India Inc provides a global Platform to the winner as they represent the cou
     <!-- custom js file -->
     <script src="js/universe.js"></script>
     <!-- /custom js file -->
+
+	<script type="application/ld+json">{"@context":"http://schema.org","@type":"Organization","name":"Devinefruit","url":"https://www.devinefruit.com","address":"Mumbai","sameAs":["https://www.facebook.com/Devinefruitcom","https://twitter.com/devinefruit","https://www.linkedin.com/company/devinefruit","https://www.instagram.com/pentodevinefruit","https://www.webwiki.com/devinefruit.com"],"itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@id": "https://www.devinefruit.com", "name": "devinefruit.com"}}, {"@type": "ListItem", "position": 2, "item": {"@id": "https://www.devinefruit.com#aboutus", "name": "Design Agency"}},{"@type": "ListItem", "position": 3, "item": {"@id": "https://www.devinefruit.com#portfolio", "name": "Creative Design"}}]}</script>
+	
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148513101-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-148513101-1');
+	</script>
+
 
 </body>
 
