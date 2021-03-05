@@ -282,7 +282,7 @@ readers do not read off random characters that represent icons */
 
 .fa-angular:before {
 /*  content: "\f420"; }*/
-content: url("https://wwwdevinefruitcom.000webhostapp.com/new/images/Digital_marketing02.png"); }
+content: url("../images/Digital_marketing02.png"); }
 
 .fa-app-store:before {
   content: "\f36f"; }
@@ -295,7 +295,7 @@ content: url("https://wwwdevinefruitcom.000webhostapp.com/new/images/Digital_mar
 
 .fa-apple:before {
 /*  content: "\f179"; }*/
-content: url("https://wwwdevinefruitcom.000webhostapp.com/new/images/Social_media02.png"); }
+content: url("../images/Social_media02.png"); }
 
 .fa-apple-pay:before {
   content: "\f415"; }
@@ -359,7 +359,7 @@ content: url("https://wwwdevinefruitcom.000webhostapp.com/new/images/Social_medi
 
 .fa-at:before {
 /*  content: "\f1fa"; } */
-content: url("https://wwwdevinefruitcom.000webhostapp.com/new/images/Branding02.png"); }
+content: url("../images/Branding02.png"); }
 
 .fa-audible:before {
   content: "\f373"; }
@@ -369,7 +369,7 @@ content: url("https://wwwdevinefruitcom.000webhostapp.com/new/images/Branding02.
 
 .fa-autoprefixer:before {
 /*  content: "\f41c"; } */
-content: url("https://wwwdevinefruitcom.000webhostapp.com/new/images/Print02.png"); }
+content: url("../images/Print02.png"); }
 
 .fa-avianex:before {
   content: "\f374"; }
@@ -522,7 +522,7 @@ content: url("https://wwwdevinefruitcom.000webhostapp.com/new/images/Print02.png
   content: "\f140"; }
 
 .fa-buromobelexperte:before {
-  content: url("https://wwwdevinefruitcom.000webhostapp.com/new/images/Website_design_02.png"); }
+  content: url("../images/Website_design_02.png"); }
 
 .fa-bus:before {
   content: "\f207"; }
@@ -739,7 +739,7 @@ content: url("https://wwwdevinefruitcom.000webhostapp.com/new/images/Print02.png
 
 .fa-code:before {
 /*  content: "\f121"; }*/
-content: url("https://wwwdevinefruitcom.000webhostapp.com/new/images/Graphic_design02.png"); }
+content: url("../images/Graphic_design02.png"); }
 
 .fa-code-branch:before {
   content: "\f126"; }
