@@ -1,1 +1,77 @@
-jQuery.noConflict();jQuery(document).ready(function(c){function b(){jQuery("a[data-gal^='prettyPhoto']").prettyPhoto({animationSpeed:"fast",slideshow:5000,theme:"light_rounded",show_title:false,overlay_gallery:false})}if(jQuery().prettyPhoto){b()}if(jQuery().quicksand){var a=c(".portfolio-area").clone();c(".portfolio-categ li").click(function(f){c(".filter li").removeClass("active");c(".filter li").removeClass("logo");c(".filter li").removeClass("smedia");c(".filter li").removeClass("brand");c(".filter li").removeClass("print");var g=c(this).attr("class").split(" ").slice(-1)[0];if(g=="all"){var d=a.find(".portfolio-item2")}else{var d=a.find(".portfolio-item2[data-type="+g+"]")}c(".portfolio-area").quicksand(d,{duration:600,adjustHeight:"auto"},function(){b()});if(g=="cat-item-1"){c(this).addClass("logo")}else{if(g=="cat-item-2"){c(this).addClass("smedia")}else{if(g=="cat-item-3"){c(this).addClass("brand")}else{if(g=="cat-item-4"){c(this).addClass("print")}else{c(this).addClass("active")}}}}return false})}});
+jQuery.noConflict();
+jQuery(document).ready(function($){
+								
+							
+function lightboxPhoto() {
+	
+	jQuery("a[data-gal^='prettyPhoto']").prettyPhoto({
+			animationSpeed:'fast',
+			slideshow:5000,
+			theme:'light_rounded',
+			show_title:false,
+			overlay_gallery: false
+		});
+	
+	}
+	
+		if(jQuery().prettyPhoto) {
+	
+		lightboxPhoto(); 
+			
+	}
+	
+	
+if (jQuery().quicksand) {
+
+ 	// Clone applications to get a second collection
+	var $data = $(".portfolio-area").clone();
+	
+	//NOTE: Only filter on the main portfolio page, not on the subcategory pages
+	$('.portfolio-categ li').click(function(e) {
+		$(".filter li").removeClass("active");	
+		$(".filter li").removeClass("logo");
+		$(".filter li").removeClass("smedia");
+		$(".filter li").removeClass("brand");
+		$(".filter li").removeClass("print");
+		// Use the last category class as the category to filter by. This means that multiple categories are not supported (yet)
+		var filterClass=$(this).attr('class').split(' ').slice(-1)[0];
+		
+		if (filterClass == 'all') {
+			var $filteredData = $data.find('.portfolio-item2');
+		} else {
+			var $filteredData = $data.find('.portfolio-item2[data-type=' + filterClass + ']');
+		}
+		$(".portfolio-area").quicksand($filteredData, {
+			duration: 600,
+			adjustHeight: 'auto'
+		}, function () {
+
+				lightboxPhoto();
+						});		
+
+		if(filterClass == 'cat-item-1')
+		{
+			$(this).addClass("logo");
+		}
+		else if(filterClass == 'cat-item-2')
+		{
+			$(this).addClass("smedia");
+		}
+		else if(filterClass == 'cat-item-3')
+		{
+			$(this).addClass("brand");
+		}
+		else if(filterClass == 'cat-item-4')
+		{
+			$(this).addClass("print");
+		}
+		else
+		{
+			$(this).addClass("active");
+		}
+		return false;
+	});
+	
+}//if quicksand
+
+});

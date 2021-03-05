@@ -6,4 +6,83 @@
 *
 * Date: Oct 27, 2016
 */
-(function(a){a.fn.countUp=function(b){var c=a.extend({time:2000,delay:10},b);return this.each(function(){var f=a(this);var d=c;var e=function(){if(!f.data("counterupTo")){f.data("counterupTo",f.text())}var j=parseInt(f.data("counter-time"))>0?parseInt(f.data("counter-time")):d.time;var o=parseInt(f.data("counter-delay"))>0?parseInt(f.data("counter-delay")):d.delay;var g=j/o;var p=f.data("counterupTo");var r=[p];var s=/[0-9]+,[0-9]+/.test(p);p=p.replace(/,/g,"");var n=/^[0-9]+$/.test(p);var h=/^[0-9]+\.[0-9]+$/.test(p);var k=h?(p.split(".")[1]||[]).length:0;for(var m=g;m>=1;m--){var l=parseInt(Math.round(p/g*m));if(h){l=parseFloat(p/g*m).toFixed(k)}if(s){while(/(\d+)(\d{3})/.test(l.toString())){l=l.toString().replace(/(\d+)(\d{3})/,"$1,$2")}}r.unshift(l)}f.data("counterup-nums",r);f.text("0");var q=function(){f.text(f.data("counterup-nums").shift());if(f.data("counterup-nums").length){setTimeout(f.data("counterup-func"),o)}else{delete f.data("counterup-nums");f.data("counterup-nums",null);f.data("counterup-func",null)}};f.data("counterup-func",q);setTimeout(f.data("counterup-func"),o)};f.waypoint(e,{offset:"100%",triggerOnce:true})})}})(jQuery);
+(function( $ ){
+  "use strict";
+
+  $.fn.countUp = function( options ) {
+
+    // Defaults
+    var settings = $.extend({
+        'time': 2000,
+        'delay': 10
+    }, options);
+
+    return this.each(function(){
+
+        // Store the object
+        var $this = $(this);
+        var $settings = settings;
+
+        var counterUpper = function() {
+            if(!$this.data('counterupTo')) {
+                $this.data('counterupTo',$this.text());
+            }
+            var time = parseInt($this.data("counter-time")) > 0 ? parseInt($this.data("counter-time")) : $settings.time;
+            var delay = parseInt($this.data("counter-delay")) > 0 ? parseInt($this.data("counter-delay")) : $settings.delay;
+            var divisions = time / delay;
+            var num = $this.data('counterupTo');
+            var nums = [num];
+            var isComma = /[0-9]+,[0-9]+/.test(num);
+            num = num.replace(/,/g, '');
+            var isInt = /^[0-9]+$/.test(num);
+            var isFloat = /^[0-9]+\.[0-9]+$/.test(num);
+            var decimalPlaces = isFloat ? (num.split('.')[1] || []).length : 0;
+
+            // Generate list of incremental numbers to display
+            for (var i = divisions; i >= 1; i--) {
+
+                // Preserve as int if input was int
+                var newNum = parseInt(Math.round(num / divisions * i));
+
+                // Preserve float if input was float
+                if (isFloat) {
+                    newNum = parseFloat(num / divisions * i).toFixed(decimalPlaces);
+                }
+
+                // Preserve commas if input had commas
+                if (isComma) {
+                    while (/(\d+)(\d{3})/.test(newNum.toString())) {
+                        newNum = newNum.toString().replace(/(\d+)(\d{3})/, '$1'+','+'$2');
+                    }
+                }
+
+                nums.unshift(newNum);
+            }
+
+            $this.data('counterup-nums', nums);
+            $this.text('0');
+
+            // Updates the number until we're done
+            var f = function() {
+                $this.text($this.data('counterup-nums').shift());
+                if ($this.data('counterup-nums').length) {
+                    setTimeout($this.data('counterup-func'),delay);
+                } else {
+                    delete $this.data('counterup-nums');
+                    $this.data('counterup-nums', null);
+                    $this.data('counterup-func', null);
+                }
+            };
+            $this.data('counterup-func', f);
+
+            // Start the count up
+            setTimeout($this.data('counterup-func'),delay);
+        };
+
+        // Perform counts when the element gets into view
+        $this.waypoint(counterUpper, { offset: '100%', triggerOnce: true });
+    });
+
+  };
+
+})( jQuery );
