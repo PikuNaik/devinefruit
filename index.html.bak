@@ -346,9 +346,9 @@ We understand your concerns, and that is why we are here for your service with o
                 </li>
 				<li class="portfolio-item2" data-id="id-4" data-type="cat-item-3">
                     <div>
-                        <a class="image-gal" href="images/bms-cap.png" data-gal="prettyPhoto[gallery]">
+                        <a class="image-gal" href="images/BMS_Cap.png" data-gal="prettyPhoto[gallery]">
 
-                            <img src="images/bms-cap.png" class="img-fluid w3layouts agileits" alt="BMS Cap Branding">
+                            <img src="images/BMS_Cap.png" class="img-fluid w3layouts agileits" alt="">
 
                         </a>
                     </div>
