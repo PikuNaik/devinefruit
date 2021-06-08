@@ -1,0 +1,1609 @@
+@font-face {
+  font-family: 'SegoePrint-Bold';
+  src: url('../fonts/SegoePrint-Bold.woff') format('woff'),url('../fonts/SegoePrint-Bold.eot') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'AmericanTypeLight';
+  src: url('../fonts/AmericanTypeLight.woff') format('woff'),url('../fonts/AmericanTypeLight.eot') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'AmericanTypewriter';
+  src: url('../fonts/AmericanTypewriter.woff') format('woff'),url('../fonts/AmericanTypewriter.eot') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GeorgiaRef';
+  src: url('../fonts/GeorgiaRef.woff') format('woff'),url('../fonts/GeorgiaRef.eot') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+	font-family: 'Segoe Print';
+	src: url('../fonts/SegoePrint.eot');
+	src: url('../fonts/SegoePrint.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/SegoePrint.woff') format('woff'),
+		url('../fonts/SegoePrint.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+html {height: 100%;}
+body{
+    -webkit-user-select: none; /* Chrome, Opera, Safari */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* Standard syntax */
+    height: 100%;
+}
+.margin-zero {margin-bottom: 0px;}
+
+.fullwidth{
+    width: 100%;
+    float: left;
+}
+.blog-bg{
+    background: url('../images/blog-detail/blogbg.png') no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+.common-padding{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.common-top-padding{
+    padding-top: 20px;
+}
+.common-bottom-padding{
+    padding-top: 20px;
+}
+.common-margin{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.common-top-margin{
+    margin-top: 20px;
+}
+.common-bottom-margin{
+    margin-bottom: 20px;
+}
+.pgloader{
+    background: #fecc00;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 999999;
+    overflow: hidden;
+}
+.loadbg{
+    background: url(../images/loader.gif) center no-repeat;
+    width: 180px;
+    height: 180px;
+    display: block;
+    margin: 0 auto;
+    background-size: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.nav-header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+/*    height: 80px;*/
+    width: 100%;
+}
+.lions-bg, .icici-bg, .bajajbanner-bg {
+    background: url(../images/lions-banner-bg.jpg) no-repeat;
+    display: block;
+    height: 400px;
+    background-size: contain;
+    padding-top: 40px;
+    transition: ease 0.5s;
+}
+.icici-bg { background: url(../images/clients-banner/icici-banner.jpg) center center no-repeat; background-size: cover;}
+.bajajbanner-bg { background: url(../images/clients-banner/bajaj-banner.jpg) center center no-repeat; background-size: cover;}
+.qoute-text{
+    background: url(../images/qoutes-bg.png) no-repeat;
+    display: block;
+    height: 288px;
+    background-size: 100%;
+    float: right;
+    margin-top: -1.5%;
+    margin-right: 10.5%;
+    position: relative;
+}
+.banner-txt{
+    width: 225px;
+    position: absolute;
+    bottom: -15px;
+    right: 33px;
+}
+.banner-txt p{
+    font-family: 'GeorgiaRef';
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    padding: 0px 5px;
+    margin: 0;
+}
+.link-extra a{color:#c62127; text-align: center; display: block; font-size: 20px;}
+.banner-txt .bytxt{
+    font-size: 13px;
+    text-align: center;
+    padding: 0px 5px;
+    margin: 0;
+    font-weight: bold;
+    font-style: italic;
+}
+.white-bg{
+    background: #fff;
+}
+.client-list{
+    width: 100%;
+    margin: 0 auto;
+}
+.client-list ul,
+.client-list ul li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+.client-list ul li{
+    background: url(../images/clients-logo-bg.png) no-repeat;
+    width: 23%;
+    height: 93px;
+    display: block;
+    float: left;
+    margin: 0px 11px 20px;
+     -webkit-transition:  all 0.5s; 
+    -moz-transition: all 0.5s;
+    background-position: center;
+}
+.client-list ul li:hover{background: url(../images/clients-logo-bg-hover.png) no-repeat; background-position: center;}
+.client-list ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: all 1s; 
+    -webkit-transition:  all 1s; 
+    -moz-transition: all 1s;
+    background-position: right;
+    position: relative;
+}
+.client-list ul li a .stamp-hover {
+    position: absolute;
+    top: 13px;
+    width: 250px;
+    height: 70px;
+    background-position: right;
+    transition:all 0.5s;
+    -webkit-transition:all 0.5s;
+    -moz-transition:all 0.5s;
+/*    opacity: 0.8;
+    -webkit-transition: all 0.5s linear;
+          transition: all 0.5s linear;
+  -webkit-transform: scale3d(0.9, 0.9, 0.9);
+          transform: scale3d(0.9, 0.9, 0.9);*/
+}
+.client-list ul li a .stamp-hover:hover {
+    position: absolute;
+    top: 13px;
+    width: 253px;
+    height: 70px;
+    background: url(../images/stamp-icon.png) no-repeat;
+    background-position: right;
+}
+.client-list ul li a div{
+/*    width: 160px;
+    height: 60px;*/
+    margin: 0px auto;
+    text-align: center;
+}
+.client-list ul li a img{
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    width: 125px;
+    /*padding-top: 20px;*/
+}
+.client-list ul li a.mahindramargin.alliance-client {
+    padding-top: 20px;
+}
+.client-list ul li a.alliance-client img {
+    width: 30%;
+}
+#axisbank{display: none;}
+
+/*--blog-details--*/
+ body {font-family: 'AmericanTypewriter'; font-size: 12px;}
+
+.main-blog{
+    position: relative;
+}
+.blog-profile{
+    position: absolute;
+    right: -79px;
+    top: -44px;
+    cursor: pointer; 
+}
+.blog-profile-inner{
+    width: 80px;
+}
+
+.blog-profile-inner span.totalCount {
+    position: absolute;
+    right: 12%;
+    top: 74%;
+    font-family: 'AmericanTypewriter'; font-size: 12px; color: #696969;
+}
+ .align-right {float: right; width: 18%;}
+ 
+ .social-bg img {   
+    width: 100%;
+    height: 100%;
+    }
+.social-content {position: absolute; top: 18%; left: 28%; padding: 0px 5px;}    
+.social-content span {font-family: 'AmericanTypewriter'; font-size: 11px; color: #696969;float: left;    padding-right: 6px;}    
+.social-content span.share{color: #2D609B;}
+.social-content span.tweet{color: #03C4F3;}
+.facebook {       margin-left: 7px; margin-top: 1px;} 
+.social-content img {width: 16px;    height: 15px; }
+.fb-share {background: url(../images/blog-detail/share-no-bg.png) no-repeat; width: 47px;    height: 23px;    padding: 1px 8px;    background-size: 82%;}            
+.stamp {background: url(../images/blog-detail/blog-stamp.png) no-repeat; position: absolute;margin-top: -7px;width: 47px;height: 35px;background-size: 85%;right: 0;}   
+.red-stamp {background: url(../images/blog-detail/red-stamp.png) no-repeat; margin-top: -56px; left: 60%; width:69px;    height: 55px; background-size: 85%;}
+.rule h1 {font-family: 'AmericanTypewriter'; font-size: 24px; color: #3c3c3c; margin-top: 10px; margin-bottom: 25px;}
+.rule p  {line-height: 20px; font-family: 'GeorgiaRef'; font-size: 13px; color: #393939; margin-top: 2px; margin-bottom: 20px;}
+.border-text {border-left: 1px solid #858585; padding: 8px 0 8px 12px;}
+.border-text h3 {font-family: 'AmericanTypewriter'; font-size: 20px; color: #bb1f25; margin: 0px 0 10px 0px;}
+.border-text span {font-family: 'AmericanTypewriter'; font-size: 18px; color: #1a1a1a;}
+.border-text2 p {line-height: 20px; font-family: 'GeorgiaRef'; font-size: 13px; color: #393939; margin-top: 15px; margin-bottom: 10px;}
+.post-img {border: 1px solid #efefef; padding: 20px 20px 10px 20px;; margin-bottom: 15px;}
+.post-caption h1 {font-family: 'GeorgiaRef'; font-size: 13px; font-style: italic; margin-top: 15px; margin-bottom: 7px; color: #393939;}
+.post-caption span {font-family: 'GeorgiaRef'; font-size: 13px; font-style: italic; color: #393939; }
+.view { 
+        width: 121px;
+        height: 30px;
+        /*background: url(../images/blog-detail/view.png) no-repeat;*/
+        display: block;}
+.view a{
+        margin-left: 28px;
+        line-height: 25px;
+        text-decoration: none;
+        color: #fff;
+        font-family: 'AmericanTypewriter'; font-size: 14px;
+}
+
+.view-text {font-family: 'AmericanTypewriter'; font-size: 16px; color: #7d7d7d; font-style: italic; margin-top: 10px;}
+.news-media{
+    width: 179px;
+    height: 168px;
+    background: url(../images/blog-detail/media-icon.png) no-repeat;
+    display: block;
+    margin-top: 30px;
+}
+.news-media a{margin-left: 40px; color: #4e4e4e;line-height: 307px;font-family: 'AmericanTypewriter'; font-size: 18px;text-decoration: none;}
+.main-blog3 .col-md-1 {width: 3%;}
+.loder {background: url(../images/blog-detail/clientbod.png) left top repeat-x; height: 2px; position: relative; margin-top: 50px;}
+.articles {background: #ffcb08; position: relative; padding-bottom: 40px;}
+.article-folder {background: url(../images/blog-detail/folder.png) no-repeat; width: 251px; height: 112px; background-size: 80%; position: absolute; top: -17%; left: 43%;}
+.article-folder a{color: #4e4e4e;font-family: 'AmericanTypewriter'; font-size: 16px;text-decoration: none; position: absolute; left: 28%; top: 29%; line-height: 17px;}
+.article-div {margin-top: 70px; margin-left: 1.4%;} 
+.article1 {width: 320px; height: 180px; margin-right: 4%; position: relative; background: url(../images/blog-detail/blog1.png) no-repeat; background-size: 100%;}            
+.article2 {width: 320px; height: 180px; margin-right: 4%; position: relative; background: url(../images/blog-detail/blog2.png) no-repeat; background-size: 100%;}
+.article3 {width: 320px; height: 180px; margin-right: 0%; position: relative; background: url(../images/blog-detail/blog3.png) no-repeat; background-size: 100%;}
+.article-caption { padding-left: 10px;   width: 312px;    height: 50px;   background: #fff;    position: absolute;    bottom: 0%;left: 4px;}
+.articletop-caption {}
+.like-bg {background: url(../images/blog-detail/like-bg.png) no-repeat; padding-left: 7px; width: 33px; height: 35px; position: absolute; right: 2px; top: -2%;}
+.like-bg img {padding-left:4px;     cursor: pointer; padding-top: 5px;}
+.like-number {color: #fff;     font-weight: 300;}
+.article-caption h3 {margin-top: 12px; color: #4e4e4e;font-family: 'AmericanTypewriter'; font-size: 14px;text-decoration: none;margin: 0;padding: 7px 0px;}
+.article-caption h3 a{color: #4e4e4e;font-family: 'AmericanTypewriter'; font-size: 14px;text-decoration: none;}
+.article-caption h3 a:hover {color: #bb1f25;}
+.loadimg {
+    position: absolute;
+    /* margin-top: 80px; */
+    cursor: pointer;
+    width: 130px;
+    top: -82px;
+    left: 49%;
+}     
+.article-caption p{
+    font-size: 12px;
+    color: #4e4e4e;
+}
+.article-caption p .views,
+.article-caption p .shares{
+    padding-left: 5px;
+}
+.article-caption p .hrago{
+    float: right;
+    padding-right: 10px;
+}
+
+.followers-profile {    float: right;    margin-right: 30px;}
+.followers-profile-name {color: #3c3c3c;     margin-right: 10px; margin-top: 5px; font-size: 18px; border-bottom: 1px solid #000;     float: right;    width: 135px;    text-align: right;}
+.followers-bg {background: url(../images/blog-detail/blog-cmt.png) no-repeat; float: right; width: 89px; height: 35px; margin-left: 15px; color: #fff;font-family: 'AmericanTypewriter'; font-size: 12px; padding-top: 8px; padding-left: 3px;}
+.followers-profile-txt {float: right;     width: 70%;    text-align: right;   margin-right: 10px; margin-top: 4px;  }
+.commentbox {    width: 100%;     padding: 7px 11px;   height: 65px;    background: #efefef;    border: none;    outline: none;    margin-top: 5px; transition: all 0.5s; -webkit-transition:all 0.5s; -moz-transition: all 0.5s;}
+.commentbox:focus{box-shadow: 0px 0px 15px 0px #ccc;}
+.commentbox2 {    width: 100%;  margin-bottom: 5px;   padding: 7px 11px;   height: 65px;    background: #efefef;    border: none;    outline: none;    margin-top: 5px;}
+.commentdiv h2 {color: #004c7d; font-size: 16px; font-weight: 600; margin-top: 40px;}
+.comment-share {text-align: right;     color: #989897;}
+.comment-share-img {background: url(../images/blog-detail/share-cmt.png) no-repeat;cursor: pointer; width: 16px; height: 16px; float: right; margin-left: 8px;}
+.commentbox2 h5{color: #004c7d; margin-top: 2px; margin-bottom: 0px; }
+.commentbox2 span {color: #989897;}
+.commentbox2 p {color: #393939;}
+.comment-menu {margin-top: 20px;}
+.comment-menu ul {padding: 0px;}
+.comment-menu ul li {float:left; list-style-type: none; padding-left: 2px;}
+.comment-menu ul li a{text-decoration: none; color: #989897; }
+.comment-menu ul li a:hover {color: #393939;}            
+.title-name h2 {    margin-top: -10px;} 
+.blog-header {position: absolute; top:0px; left: 12%;}
+.blog-cover2 {display: none;}
+
+
+/*portfolio*/
+.loadicon {position: relative; margin-top: 42px;}
+.thumnaile-adj {margin-left: 5px;}
+.info-left {    position: absolute;    bottom: 0%; left: 3%;}
+.info-right {    right: 5%;    position: absolute;    bottom: 0%; width: 25%;}
+.info-right img {width: 14px !important; height: 14px;     margin-bottom: 2px;}
+.fbarrng .filtr-container .portfilter .info-left {bottom: 3%;}
+.fbarrng .filtr-container .portfilter .info-right  {bottom: 3%;}
+.info-right-num {margin-right: 15px; float: left;}
+.launch-project {background: url(../images/launching-plane.png) no-repeat;cursor: pointer; position: relative; margin:5% auto 0; width: 357px; height: 154px;}
+.launch-project span{position: absolute; left: 20%; top: 18%; color: #006ba2; font-size: 14px;}
+.launch-project h5 {position: absolute; left: 72px; top: 46px; color: #fff; font-size: 24px;}
+.launch-project p {position: absolute; left: 70px; top: 20px; color: #333; font-size: 15px;}
+.service-launch-project {background: url(../images/launching-plane.png) no-repeat; position: relative; margin:40px auto 0px; background-size: 100%; width: 245px; height: 108px;}
+.service-launch-project h5 {position: absolute; left: 50px; top: 30px; color: #fff; font-size: 18px; cursor: pointer;}
+.service-launch-project p {position: absolute; cursor: default; left: 50px; top: 10px; color: #333; font-size: 14px;}
+.portfolio-brainstorm{position:absolute;bottom:0;}
+
+/*Career*/
+.career-bg {background: url(../images/career/careerbg.jpg) center center no-repeat; width: 100%; height: auto; min-height: 100%; background-size: cover;background-attachment: fixed;}
+/*.main-creativediv {width: 1000px; margin: 150px auto 0px;}*/
+.our-culture,.job-opening,.creative-maincont {background: url(../images/career/our-culture-bg.png) top center no-repeat; height: 452px; position: relative;}
+.we-are-creative {background: url(../images/career/creative-people-bg.png) no-repeat; position: relative; width:650px; height: 268px; margin: 150px auto 0px; top:85px;}
+.pbcommunication .creative-people {padding-top: 30px;}
+.pbcommunication .creative-people span {font-size: 45px;}
+
+.we-are {position: absolute; top: -2px; left: 44%;}
+.we-are span {font-size: 24px; color:#ffcb08;}
+.creative-people {padding-left: 10%; padding-top: 20px;}
+.creative-people span {font-size: 60px; color:#ffcb08; text-align: center; display: block;}
+.careers-div {margin: -60px auto 0;max-width: 1000px;overflow: hidden;}
+/*.creative-div {margin-top: -150px; margin-left: 6%;}*/
+/*.job-opening {background: url(../images/career/job-opening-bg.png) top center no-repeat;}*/
+.jobs {background: url(../images/career/job-opening-bg.png) top center no-repeat;width: 255px;height: 450px;display: inline-block;}
+/*.creative-maincont,.our-culture {background: url(../images/career/job-opening-bg.png) top center no-repeat;}*/
+.our-culture-icon {width: 131px;position: relative; margin:0 auto; top:90px;}
+.our-culture-icon a,.our-opening-icon a,.creative-icon a, .finance-icon a, .account-manager-icon a, .corporate-sales-icon a {cursor: context-menu;}
+.our-culture-our {font-size: 24px; text-align: center; margin:0px; width: 55px; color:#004c7d; position: absolute; background: #f0f0f0; bottom: -2px; left: 29%; height: 23px;}
+.our-culture-culture {font-size: 36px; color:#004c7d; margin-top: -5px;}
+.our-culture-border {border-bottom: 1px solid #d7d7d7; width: 130px; position: relative; margin-top: 25px;}
+.our-culture-button {background: url(../images/career/job-opening-btn-bg.png) no-repeat; width:90px; height: 93px; position: absolute; bottom: 3%; left: 37%;  transition: all 0.5s; -webkit-transition:  all 0.5s; -moz-transition: all 0.5s;}
+.our-culture-button:hover {background: url(../images/career/job-opening-btn-hover-bg.png) no-repeat; width:90px; height: 93px; position: absolute; bottom: 3%; left: 37%;}
+.our-culture-button-icon {margin-left: 30px; margin-top: 30px; width: 28px; height: 27px; background: url(../images/career/our-culture-icon.png) no-repeat; transition: all 0.5s; -webkit-transition:  all 0.5s; -moz-transition: all 0.5s;}
+.our-culture-button:hover .our-culture-button-icon, .our-culture .jobs:hover .our-culture-button-icon {background: url(../images/career/culture-icon-hover.png) no-repeat;}
+.our-opening-icon {width: 236px;position: relative; margin:0 auto; top:22px;}
+.our-opening-border {border-bottom: 1px solid #d7d7d7; width: 130px; position: relative; margin-top: 25px; margin-left: 21%;}
+.our-opening-opening {font-size: 36px; color:#004c7d;}
+.our-opening-button {background: url(../images/career/job-opening-btn-bg.png) no-repeat; width:90px; height: 93px; position: absolute; bottom: 3%; left: 37%; transition: all 0.5s; -webkit-transition:  all 0.5s; -moz-transition: all 0.5s;}
+.our-opening-button:hover,.jobs:hover .our-opening-button,.jobs:hover .our-culture-button,.jobs:hover .creative-button {background: url(../images/career/job-opening-btn-hover-bg.png) no-repeat; width:90px; height: 93px; position: absolute; bottom: 3%; left: 37%;}
+.our-opening-button-icon {margin-left: 33px; margin-top: 30px;width: 20px; height: 32px; background: url(../images/career/job-opening-icon.png) no-repeat;}
+.our-opening-button:hover .our-opening-button-icon, .job-opening .jobs:hover .our-opening-button-icon {background: url(../images/career/job-opening-icon-hover.png) no-repeat; transition: all 0.5s; -webkit-transition:  all 0.5s; -moz-transition: all 0.5s;}
+.job-opening p {text-align: center; margin-bottom: 0px;line-height: 27px; color: #004c7d;font-size: 30px;}
+.our-opening-icon.job-opens .creative-job {margin-top: 5px;}
+.finance-icon {width: 197px;position: relative; margin:0 auto; top:95px;}
+.finance-text2 {margin: -20px 0px 0px 0px;}
+.finance-text {position: relative; font-size: 23px !important;}
+.finance-text:before {content: "";border-bottom: 1px solid #d7d7d7; position: absolute;bottom: 11px; width: 20px; right: 30px; }
+.finance-text:after {content: "";border-bottom: 1px solid #d7d7d7; position: absolute; bottom: 11px; width: 20px; left: 30px;}
+.account-manager-icon {width: 204px;position: relative; margin:0 auto; top:90px;}
+.account-manager-icon img {margin-bottom: 17px;}
+.corporate-sales-icon {width: 170px;position: relative; margin:0 auto; top:80px;}
+.corporate-sales-icon img{margin-bottom: 10px;}
+.corporate-text {position: relative; font-size: 23px !important;}
+.corporate-text:before {content: "";border-bottom: 1px solid #d7d7d7; position: absolute;bottom: 12px; width: 20px; right: 10px; }
+.corporate-text:after {content: "";border-bottom: 1px solid #d7d7d7; position: absolute; bottom: 12px; width: 20px; left: 10px;}
+.creative-pro-icon {width: 203px;position: relative; margin:0 auto; top:95px;}
+.creative-pro-icon img {margin-bottom: 20px;}
+.creative-pro-text {position: relative; font-size: 23px !important;}
+.creative-pro-text:before {content: "";border-bottom: 1px solid #d7d7d7; position: absolute;bottom: 11px; width: 20px; right:30px; }
+.creative-pro-text:after {content: "";border-bottom: 1px solid #d7d7d7; position: absolute; bottom: 11px; width: 20px; left: 30px;}
+.social-pro-icon {width:164px;position: relative; margin:0 auto; top:95px;}
+.social-pro-icon img {margin-top: -10px; margin-bottom: 10px;}
+.social-pro-text {position: relative; font-size: 23px !important;}
+.social-pro-text:before {content: "";border-bottom: 1px solid #d7d7d7; position: absolute;bottom: 11px; width: 20px; right:20px; }
+.social-pro-text:after {content: "";border-bottom: 1px solid #d7d7d7; position: absolute; bottom: 11px; width: 20px; left: 20px;}
+.web-dev-icon {width:200px;position: relative; margin:0 auto; top:95px;}
+.web-dev-icon img {margin-top: -25px; margin-bottom: -42px;}
+.web-dev-text {position: relative; font-size: 23px !important;}
+.web-dev-text:before {content: "";border-bottom: 1px solid #d7d7d7; position: absolute;bottom: 12px; width: 20px; right: 10px; }
+.web-dev-text:after {content: "";border-bottom: 1px solid #d7d7d7; position: absolute; bottom: 12px; width: 20px; left: 10px;}
+.hr-icon {width:152px;position: relative; margin:0 auto; top:95px;}
+.hr-icon img {margin-top: -7px; margin-bottom: 4px; margin-left: -7px;}
+.hr-text {position: relative; font-size: 23px !important;}
+.hr-text:before {content: "";border-bottom: 1px solid #d7d7d7; position: absolute;bottom: 12px; width: 20px; right:5px; }
+.hr-text:after {content: "";border-bottom: 1px solid #d7d7d7; position: absolute; bottom: 12px; width: 20px; left: 5px;}
+
+
+
+.creative-icon {width: 130px;position: relative; margin:0 auto; top:90px;}
+.creative-keeda {font-size: 24px; text-align: center; margin:0px; width: 80px; color:#004c7d; position: absolute; background: #f0f0f0; bottom: -2px; left: 18%; height: 23px;}
+.creative-job{font-size: 36px; color:#004c7d;}
+.our-opening-icon.job-opens .creative-keeda {font-size: 24px;}
+.creative-border {border-bottom: 1px solid #d7d7d7; width: 130px; position: relative; margin-top: 10px; margin-left: 5px;}
+.our-opening-icon.job-opens .creative-border {margin: 0 auto;width: 150px;}
+.our-opening-icon.job-opens .creative-border {margin-top: 28px;}
+.our-opening-icon.job-opens .creative-keeda {width: 100px;}
+.creative-icon .creative-job {margin-top: 20px;}
+.creative-button  {background: url(../images/career/job-opening-btn-bg.png) no-repeat; width:90px; height: 93px; position: absolute; bottom: 3%; left: 37%; transition: all 0.5s; -webkit-transition:  all 0.5s; -moz-transition: all 0.5s;}
+.creative-button:hover {background: url(../images/career/job-opening-btn-hover-bg.png) no-repeat; width:90px; height: 93px; position: absolute; bottom: 3%; left: 37%; }
+.creative-keeda-icon {margin-left: 28px; margin-top: 28px; width: 30px; height: 34px; background: url(../images/career/creative-keeda-icon.png) no-repeat; transition: all 0.5s; -webkit-transition:  all 0.5s; -moz-transition: all 0.5s;}
+.creative-button:hover .creative-keeda-icon , .our-opening-button:hover .creative-keeda-icon, .creative-maincont .jobs:hover .creative-keeda-icon {background: url(../images/career/creative-keeda-icon-hover.png) no-repeat;}
+.finance-icon-icon {margin-left: 28px; margin-top: 28px; width: 31px; height: 31px; background: url(../images/career/finance-icon.png) no-repeat; transition: all 0.5s; -webkit-transition:  all 0.5s; -moz-transition: all 0.5s;}
+.acmanger-icon-icon {margin-left: 26px; margin-top: 34px; width: 35px; height: 20px; background: url(../images/career/acmanger-icon.png) no-repeat; transition: all 0.5s; -webkit-transition:  all 0.5s; -moz-transition: all 0.5s;}
+.our-opening-button:hover .acmanger-icon-icon, .job-opening .jobs:hover .acmanger-icon-icon {background: url(../images/career/acmanger-hover-icon.png) no-repeat;}
+.our-opening-button:hover .finance-icon-icon, .job-opening .jobs:hover .finance-icon-icon {background: url(../images/career/finance-hover-icon.png) no-repeat;}
+.social-pro-icon-icon {margin-left: 31px; margin-top: 30px; width: 23px; height: 25px; background: url(../images/career/social-pro-icon.png) no-repeat; transition: all 0.5s; -webkit-transition:  all 0.5s; -moz-transition: all 0.5s;}
+.our-opening-button:hover .social-pro-icon-icon, .job-opening .jobs:hover .social-pro-icon-icon {background: url(../images/career/social-pro-icon-hover.png) no-repeat;}
+.web-dev-icon-icon {margin-left: 18px; margin-top: 31px; width: 49px; height: 24px; background: url(../images/career/web-dev-icon.png) no-repeat; transition: all 0.5s; -webkit-transition:  all 0.5s; -moz-transition: all 0.5s;}
+.our-opening-button:hover .web-dev-icon-icon, .job-opening .jobs:hover .web-dev-icon-icon {background: url(../images/career/web-dev-icon-hover.png) no-repeat;}
+.hr-pro-icon-icon {margin-left: 33px; margin-top: 22px; width: 24px; height: 40px; background: url(../images/career/hr-pro-icon.png) no-repeat; transition: all 0.5s; -webkit-transition:  all 0.5s; -moz-transition: all 0.5s;}
+.our-opening-button:hover .hr-pro-icon-icon, .job-opening .jobs:hover .hr-pro-icon-icon {background: url(../images/career/hr-pro-icon-hover.png) no-repeat;}
+.client-list ul li{display: none;}
+.our-wrk-social{
+    margin-right: -107px;
+}
+.rpg-hov-mr{margin-top: -13px !important;}
+.pbc-yellow-bg{background: #ffca08;}
+
+/*#habla_panel_div{display: none !important;}*/
+#habla_window_div{
+    bottom: 35px !important;
+}
+.rujuta-ban{
+    height: 746px !important;
+}
+
+/*9/9 clients logo css*/
+
+.client-list ul li a.icicimargin,
+.client-list ul li a.axismargin,
+.client-list ul li a.mahindramargin,
+.client-list ul li a.auquamargin,
+.client-list ul li a.prasolmargin {padding-top: 28px;}
+
+.client-list ul li a.reliancemargin,
+.client-list ul li a.abhimargin,
+.client-list ul li a.danonemargin,
+.client-list ul li a.motilalmargin,
+.client-list ul li a.rujutamargin,
+.client-list ul li a.sabrasomargin,
+.client-list ul li a.welcomemargin,
+.client-list ul li a.kingfishermargin {padding-top: 16px;}
+
+.client-list ul li a.lionsmargin,
+.client-list ul li a.sunmargin, 
+.client-list ul li a.talatimargin,
+.client-list ul li a.frightmargin,
+.client-list ul li a.meemargin {padding-top: 12px;}
+
+.client-list ul li a.anchormargin,
+.client-list ul li a.wondermargin {padding-top: 30px;}
+
+.client-list ul li a.bajajmargin,
+.client-list ul li a.LTmargin,
+.client-list ul li a.lorealmargin,
+.client-list ul li a.rblmargin,
+.client-list ul li a.sbimargin,
+.client-list ul li a.tatamargin,
+.client-list ul li a.ladiesmargin,
+.client-list ul li a.navymargin,
+.client-list ul li a.vkmargin {padding-top: 24px;}
+
+.client-list ul li a.ajantamargin {padding-top: 36px;}
+
+.client-list ul li a.madhavmargin,
+.client-list ul li a.crosstabmargin,
+.client-list ul li a.esselimargin,
+.client-list ul li a.bombayvelvetmargin {padding-top: 20px;}
+
+.client-list ul li a.bilbongmargin,
+.client-list ul li a.esselmargin,
+.client-list ul li a.mmimargin,
+.client-list ul li a.afinemargin,
+.client-list ul li a.instamargin,
+.client-list ul li a.jurvamargin,
+.client-list ul li a.khubchandanimargin,
+.client-list ul li a.subamargin {padding-top: 13px;}
+
+.client-list ul li a.edelwissmargin,
+.client-list ul li a.unititlemargin,
+.client-list ul li a.narmadamargin {padding-top: 17px;}
+
+.client-list ul li a.emdicomargin,
+.client-list ul li a.restylanemargin,
+.client-list ul li a.vadilalmargin {padding-top: 15px;}
+
+.client-list ul li a.gardenmargin,
+.client-list ul li a.talent1margin,
+.client-list ul li a.kevinmargin,
+.client-list ul li a.singhaniamargin {padding-top: 14px;}
+
+.client-list ul li a.kotakmargin,
+.client-list ul li a.serimargin,
+.client-list ul li a.masterchefmargin {padding-top: 22px;}
+
+.client-list ul li a.talentmargin,
+.client-list ul li a.bktmargin,
+.client-list ul li a.danone1margin,
+.client-list ul li a.papulexmargin,
+.client-list ul li a.ubmmargin,
+.client-list ul li a.kellogsmargin {padding-top: 19px;}
+
+.client-list ul li a.acronmargin,
+.client-list ul li a.centermargin {padding-top: 21px;}
+
+.client-list ul li a.airmargin,
+.client-list ul li a.issamemargin,
+.client-list ul li a.mangalmargin {padding-top: 11px;}
+
+.client-list ul li a.amoremargin,
+.client-list ul li a.appmargin,
+.client-list ul li a.prabhatmargin {padding-top: 18px;}
+
+.client-list ul li a.ddbmargin {padding-top: 34px;}
+
+.client-list ul li a.delmontmargin,
+.client-list ul li a.mainlandmargin {padding-top: 32px;}
+
+.client-list ul li a.hdfcmargin {padding-top: 29px;}
+
+/*9/9 clients logo css end*/
+.right66{right: 66px;}
+/*.center-block{height: 100%;}*/
+
+.client-list ul li a img.adjst-wth{
+    width:60px;
+}
+.client-list ul li a img.krismon{
+    width:50px;
+}
+
+.client-list ul li a img.abhi-adjst-wth{
+    width:115px;
+}
+.client-list ul li a img.esel-infr-adjst-wth{
+    width:80px;
+}
+.client-list ul li a img.garden-strt{
+    width:55px;
+}
+.client-list ul li a img.air{
+    width:90px;
+}
+.client-list ul li a img.juvana-wdth{
+    width:100px;
+}
+.client-list ul li a img.f-star{
+    width:222px;
+}
+.client-list ul li a img.ajant-p{
+    width:160px;
+}
+.client-list ul li a img.buckfast{
+    width:135px;
+}
+.client-list ul li a img.delmont{
+    width:130px;
+    margin-top: 18px;
+}
+.client-list ul li a img.oral-care{
+    width:130px;
+}
+.client-list ul li a img.inverso{
+    width:100px;
+}
+.client-list ul li a img.icommorece-ticket{
+    padding-top: 22px;
+}
+.client-list ul li a img.ripple-eff{
+    width: 160px;
+    padding-top: 16px;
+}
+.client-list ul li a img.indusland-logo{
+    padding-top: 20px;
+}
+.client-list ul li a img.union-mf{
+    width: 100px;
+    padding-top:13px;
+}
+.client-list ul li a img.parsol-chem{
+    margin-top: 15px;
+}
+.client-list ul li a img.relliance-logo{
+    margin-top: 10px;
+}
+.client-list ul li a img.narmda-holiday{
+    margin-top: 10px;
+}
+.client-list ul li a img.master-chef{
+    margin-top: -5px;
+}
+.client-list ul li a img.lions-img{
+    margin-top: 5px;
+}
+.client-list ul li a img.juvana-wdth.kingfisher-logo {
+    width: 70px;
+}
+.client-list ul li a img.edelweiss{
+    margin-top: 2px;
+}
+.client-list ul li a img.motilal-img{
+    margin-top: 3px;
+}
+
+.client-list ul li a img.krismon-img{
+    width:30px;
+}
+.modal-title {
+    color: #004b7c;
+    font-weight: bold;
+}
+.img-center img{margin: auto;}
+#mycreativel .carousel-control,
+#myCarousel .carousel-control{
+    width: 8%;
+}
+.arrow-displaynone {
+    display: none;
+}
+.portfolio-bg.aditya-bg{
+        background: url(../images/website-slider/abhi/abhi-banner.jpg) no-repeat;
+}
+.portfolio-bg.lionsbannerbg{
+        background: url(../images/website-slider/isaame/Lions_Isaame_banner.jpg) no-repeat;
+}
+.portfolio-bg.billabong-bg{
+        background: url(../images/website-slider/billabong/banner.jpg) no-repeat;
+}
+.portfolio-bg.narmda-holiday-bg{
+        background: url(../images/website-slider/narmda-holidays/banner.jpg) no-repeat;
+}
+.portfolio-bg.intex-bg {
+        background: url(../images/website-slider/intex-i-wallet/Intex_banner.jpg) no-repeat;
+}
+.portfolio-bg.induslan-bg {
+        background: url(../images/website-slider/indusland-bank/Banner.jpg) no-repeat;
+}
+.portfolio-bg.icici-lombard-bg {
+        background: url(../images/website-slider/icici-lombard/Banner.jpg) no-repeat;
+}
+.portfolio-bg.india-assurance-bg {
+        background: url(../images/website-slider/india-assurance/New_India_Banner.jpg) no-repeat;
+}
+.portfolio-bg.india-capital-bg {
+        background: url(../images/website-slider/india-capital/India-capital-banner.jpg) no-repeat;
+}
+.portfolio-bg.kotak-insurance-bg {
+        background: url(../images/website-slider/kotak-insurance/KotakInsurance_banner.jpg) no-repeat;
+}
+.portfolio-bg.only-on-rent-bg{
+        background: url(../images/website-slider/only-on-rent/banner.jpg) 0 20px no-repeat;
+        height: 525px;
+}
+.portfolio-bg.persol-chem-bg{
+        background: url(../images/website-slider/persol-chem/banner.jpg) no-repeat;
+}
+.portfolio-bg.union-mutual-bg{
+        background: url(../images/website-slider/union-mutual/union-banner.jpg) no-repeat;
+}
+.ourheading .our-we{
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.culturetxt{
+    padding-left: 0px;
+}
+.ourheading .pbcommunication{
+    top: 30px;
+}
+.culture-box{
+    width: 100%;
+    float: left;
+}
+.culturetxtbox{
+    padding-top: 50px;
+    padding-bottom: 35px;
+}
+.culturetxtbox h2{
+    font-family: 'GeorgiaRef';
+    color: #2e3192;
+    font-size: 20px;
+    margin: 0;
+    padding: 10px 0px;
+}
+.culturetxtbox.brd-identy p{
+    color: #0a1315;
+}
+.moredetails{
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.moredetails p{
+    font-family: 'GeorgiaRef';
+    color: #0a1315;
+}
+.moredetails p a{
+    color: #2e3594;
+}
+.culture-slider .photostack figure a img{
+    max-width: 100%;
+}
+.home-mob-box{display: none;}
+/**********leadership page style*************/
+
+.leadershipbox{
+    background: url(../images/leadership/leadership-bg.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 1535px;
+    padding-top: 100px;
+    position: relative;
+    /*background-position: 0px -208px;*/
+}
+.buildingbg{
+    background: url(../images/leadership/building.png) no-repeat;
+    width: 900px;
+    height: 1675px;
+    float: left;
+    background-size: 100%;
+    position: relative;
+    margin-top: 5px;
+    /*background-position: 0px 207px;*/
+}
+.leaderbox{
+    background-image: url(../images/leadership/common-window.png);
+    background-repeat: no-repeat;
+    width: 230px;
+    height: 180px;
+    float: left;
+    background-size: 100%;
+    position: relative;
+}
+.founder{
+    position: relative;
+    height: 280px;
+    margin-top:110px;
+}
+
+.founder.foundmember{margin-top: 60px;}
+.lead-1, .lead-2, .lead-3{
+    position: absolute;
+    top: 100px;
+    left: 220px;
+}
+.lead-2{
+    top: 55px;
+    left: 205px;
+}
+.lead-3{
+    left: 105px;
+    top: 32px;
+}
+.windowbg{
+    width: 160px;
+    overflow: hidden;
+    position: absolute;
+    top: 10px;
+    left: 25px;
+}
+.windowbg img{
+    max-width: 100%;
+}
+.namebox{
+    background: url(../images/leadership/name-plate.jpg) no-repeat;
+    width: 180px;
+    height: 50px;
+    background-size: 100%;
+    margin: 0 auto;
+}
+.namebox p,
+.namebox h3{
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    padding-top: 5px;
+}
+.namebox p{
+    font-size: 14px;
+    padding: 0px;
+}
+.namebox.ashish, .namebox.rakesh,
+.namebox.akshay-kamth, .namebox.jayti-thakar,
+.namebox.mohit-vaya, .namebox.sweta-patel{ margin-left:25px;}
+
+.side-branch{
+    width: 300px;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-40%);
+    right: 0px;
+}
+.side-branch img{
+    max-width: 100%;
+}
+.roadbg{
+    background: url(../images/leadership/road.jpg) no-repeat;
+    width: 100%;
+    height: 240px;
+    float: left;
+    background-size: cover;
+    background-position: center;
+}
+.leaderjoin{
+    background: #FFD125;
+    width: 100%;
+    float: left;
+    padding-bottom: 20px;
+}
+.leadjoinpic{
+    width: 150px;
+    float: left;
+}
+.leadjoinpic img{
+    max-width: 100%;
+    margin-top: -15px;
+}
+.leadjoinpic img.life-at-pbc{
+    margin-top: -21px;
+}
+.leadjointext{
+    width: calc(100% - 170px);
+    float: left;
+    margin-left: 20px;
+}
+.leadjointext h2{
+    font-size: 24px;
+    color: #333;
+    text-align: left;
+    margin: 0;
+    padding-top:35px;
+    padding-bottom: 5px;
+}
+.leadjointext p{font-size: 14px;}
+.leadapply{
+    width: 125px;
+    float: right;
+    color: #333;
+}
+.leadapply span.have-look-at{
+    position: relative;
+    right: -8px;
+    top: -8px;
+}
+.leadapply span.apply-btn{
+    margin-top: 5px;
+    margin-left: 7px;
+    background: #ffdb4f;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    padding:1px 4px;
+    color: #9c0003;
+    font-size: 12px;
+    outline: none;
+    font-weight: bold;
+    margin-top: -1px;
+    display: inline-block;
+}
+.join-gang a:hover span.apply-btn {
+    opacity: 0.8;
+}
+.leadright img{
+    margin-top: 5px;
+}
+.leadright{margin-top: 18px;}
+.leadright button{
+    margin-top: 0px;
+    margin-left: 10px;
+}
+.leadbox{
+    width: 230px;
+    float: left;
+}
+.visiblestaff {
+    visibility: hidden;
+}
+.lead-2 .leaderbox{
+    width: 230px;
+    height: 170px;
+}
+/*.lead-3 .leaderbox{
+    width: 200px;
+    height: 150px;
+}*/
+.lead-2 .leadbox {
+    width: 250px;
+}
+/*.lead-3 .leadbox {
+    width: 200px;
+}*/
+.foundheight{
+    height: 505px;
+}
+.leaderbox.akshaybg{
+    background-image: url(../images/leadership/akshaybg.png);
+}
+.leaderbox.jaytibg{
+    background-image: url(../images/leadership/jaytibg.png);
+}
+.leaderbox.mohitbg{
+    background-image: url(../images/leadership/mohitbg.png);
+}
+.leaderbox.vaibhavbg{
+    background-image: url(../images/leadership/vaibhavbg.png);
+}
+.leaderbox.toralbg{
+    background-image: url(../images/leadership/toralbg.png);
+}
+.leaderbox.akshaybg{
+    background-image: url(../images/leadership/akshaybg.png);
+}
+.windowrelate{
+    position: relative;
+}
+.memberpic{
+    position: absolute;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+}
+.memberpic.ashish-pic{
+    background: url(../images/leadership/ashish-pic.png) no-repeat;
+    width: 65px;
+    height: 110px;
+    background-size: 100%;
+    top: 30px;
+    left: 72px;
+}
+.memberpic.ashish-pic:hover{
+    background: url(../images/leadership/ashish-pic.png) no-repeat;
+    width: 100px;
+    background-size: 100%;
+    top: 30px;
+    left: 70px;
+}
+.memberpic.rakesh-pic{
+    background: url(../images/leadership/rakesh-pic.png) no-repeat;
+    width: 86px;
+    height: 110px;
+    background-size: 100%;
+    top: 44px;
+    left: 76px;
+}
+.memberpic.rakesh-pic:hover{
+    background: url(../images/leadership/rakesh-pic.png) no-repeat;
+    width: 95px;
+    background-size: 100%;
+    top: 35px;
+    left: 76px;
+}
+.memberpic.akshay{
+    background: url(../images/leadership/akshay.png) no-repeat;
+    width: 88px;
+    height: 125px;
+    background-size: 100%;
+    top: 30px;
+    left: 72px;
+}
+.memberpic.akshay:hover{
+    background: url(../images/leadership/akshay-hover.png) no-repeat;
+    width: 115px;
+    background-size: 100%;
+    top: 40px;
+    left: 58px;
+}
+.memberpic.jayti{
+    background: url(../images/leadership/jayti.png) no-repeat;
+    width: 72px;
+    height: 115px;
+    background-size: 100%;
+    top: 25px;
+    left: 80px;
+}
+.memberpic.jayti:hover{
+    background: url(../images/leadership/jayti-hover.png) no-repeat;
+    width: 155px;
+    height: 125px;
+    background-size: 100%;
+    top: 28px;
+    left: 40px;
+}
+.memberpic.mohit{
+    background: url(../images/leadership/mohit.png) no-repeat;
+    width: 127px;
+    height: 110px;
+    background-size: 100%;
+    top: 32px;
+    left: 50px;
+}
+.memberpic.mohit:hover{
+    background: url(../images/leadership/mohit-hover.png) no-repeat;
+    width: 100px;
+    height: 120px;
+    background-size: 100%;
+    left: 65px;
+}
+.memberpic.vaibhav{
+    background: url(../images/leadership/vaibhav.png) no-repeat;
+    width: 120px;
+    height: 110px;
+    background-size: 100%;
+    top: 31px;
+    left: 55px;
+}
+.memberpic.vaibhav:hover{
+    background: url(../images/leadership/vaibhav-hover.png) no-repeat;
+    width: 85px;
+    height: 110px;
+    background-size: 100%;
+    left: 70px;
+}
+.memberpic.toral{
+    background: url(../images/leadership/toral.png) no-repeat;
+/*    width: 60px;
+    height: 116px;
+    background-size: 100%;
+    top: 25px;
+    left: 118px;*/
+    width: 50px;
+    height: 108px;
+    background-size: 100%;
+    top: 38px;
+    left: 126px;
+}
+.memberpic.toral:hover{
+/*    background: url(../images/leadership/toral-hover.png) no-repeat;
+    width: 85px;
+    height: 110px;
+    background-size: 100%;
+    left: 70px;*/
+    background: url(../images/leadership/toral.png) no-repeat;
+    width: 60px;
+    height: 116px;
+    background-size: 100%;
+    top: 24px;
+    left: 118px;
+}
+.memberpic.nelson{
+    background: url(../images/leadership/nelson.png) no-repeat;
+    width: 105px;
+    height: 170px;
+    background-size: 100%;
+    top: 13px;
+    left: 65px;
+}
+.memberpic.nelson:hover{
+    background: url(../images/leadership/nelson-hover.png) no-repeat;
+    width: 86px;
+    /*height: 120px;*/
+    height: 152px;
+    background-size: 100%;
+    top: 23px;
+    left: 72px;
+}
+.yellow-car{
+    width: 180px;
+    position: absolute;
+    bottom: 25px;
+    right: 0px;
+}
+.cycle-img img,
+.yellow-car img{
+    max-width: 100%;
+}
+.cycle-img{
+    width: 204px;
+    position: absolute;
+    right: 93px;
+    bottom: -137px;
+}
+.hoverbox{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 120px;
+    transition: ease-in-out 0.3s;
+    -webkit-transition: ease-in-out 0.3s; 
+    -moz-transition: ease-in-out 0.3s;
+    visibility: hidden;
+}
+.memberpic:hover  .hoverbox{
+    /*display: block;*/
+    visibility: visible;
+}
+.leadertxt a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;    
+}
+.modal-body .leadertxt a {
+    color: #000;
+}
+.trainglebox{
+    position: relative;
+    width: 320px;
+    padding: 40px;
+    text-align: center;
+    color: #fff;
+    background: #075698;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#2e88c4), to(#075698));
+    background: -moz-linear-gradient(#2e88c4, #075698);
+    background: -o-linear-gradient(#2e88c4, #075698);
+    background: linear-gradient(#2e88c4, #075698);
+    -webkit-border-top-left-radius: 220px 120px;
+    -webkit-border-top-right-radius: 220px 120px;
+    -webkit-border-bottom-right-radius: 220px 120px;
+    -webkit-border-bottom-left-radius: 220px 120px;
+    -moz-border-radius: 220px / 120px;
+    border-radius: 220px / 120px;
+    z-index: 99;
+}
+.trainglebox:before{
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 50px;
+    width: 30px;
+    height: 30px;
+    background: #075698;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+.trainglebox:after{
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 30px;
+    width: 15px;
+    height: 15px;
+    background: #075698;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+.leadertxt h2{
+    font-size: 22px;
+    margin: 0px;
+}
+.leadertxt .degign{
+    font-size: 14px;
+}
+.leadertxt p:last-child{
+    margin-bottom: 0px;
+}
+.leaderslide-mob{display: none;}
+
+
+@media screen and (max-width:1366px) {
+    .leadershipbox{
+        background-position-x: -75px;
+    }
+}
+@media screen and (max-width:1024px) {
+    .leadright {margin-top: 9px;}
+    .leadershipbox{height: 1308px;}    
+    .buildingbg{margin-top: 0px;width: 760px;height: 1380px;}
+    .side-branch{width: 220px;}
+    .yellow-car{width: 120px;bottom: 12px;}
+    .lead-1, .lead-2, .lead-3{left: 182px;top: 60px;}
+    .leadbox{width: 200px;}
+    .namebox{width: 150px;height: 40px;margin-left: 28px;}
+    .namebox p, .namebox h3{font-size: 13px;}    
+    .namebox p {font-size: 11px;}
+    .leaderbox{width: 200px;height: 150px;}
+    .lead-2{top: 0;left: 172px;}
+    .lead-2 .leadbox {width: 225px;}
+    .lead-2 .leaderbox {width: 200px;height: 150px;}
+    .foundheight {height: 409px;margin-top: 50px;}
+    .memberpic.ashish-pic{width: 54px;top: 30px;left: 70px;height: 90px;}
+    .memberpic.ashish-pic:hover{width: 65px;}
+    .memberpic.rakesh-pic{width: 86px;top: 30px;left: 63px;height: 90px;}
+    .memberpic.rakesh-pic:hover{width: 96px;left: 60px;top: 30px;}
+    .memberpic.akshay{width: 77px;top: 25px;left: 65px;}
+    .memberpic.akshay:hover{width: 91px;}
+    .memberpic.jayti{width: 60px;height: 100px;}
+    .memberpic.jayti:hover{width: 130px;height: 105px;}
+    .memberpic.mohit {width: 105px;height: 100px;}
+    .memberpic.mohit:hover{width: 82px;height: 105px;}
+    .lead-3{top: -8px;left: 75px;}
+    .memberpic.vaibhav{width: 102px;height: 100px;top: 28px;left: 50px;}
+    .memberpic.vaibhav:hover{width: 72px;height: 100px;top: 28px;left: 65px;}
+    .memberpic.toral{width: 40px;height: 100px;top: 27px;left: 113px;}
+    .memberpic.nelson{width: 90px;height: 108px;top: 13px;left: 55px;}
+    .memberpic.nelson:hover{width: 72px;height: 100px;top: 23px;left: 62px;}
+    .leadjoinpic {width: 120px;}
+    .cycle-img { width: 209px; position: absolute; right: 73px; bottom: -147px;}
+    
+}
+@media screen and (max-width:768px) {
+    .cycle-img {width: 182px;right: 78px;bottom: -127px;}
+    .founder{margin-top: 127px;}
+    .leadershipbox {background-position-x: -115px;}
+    .buildingbg{width: 710px;height: 1130px;}
+    .leadershipbox {height: 1228px;}
+    .side-branch, .yellow-car{display: none;}
+    .lead-1, .lead-2, .lead-3 {left: 156px;top: 50px;}
+    .lead-1 .namebox{margin-left: 24px;}
+    .foundheight {height: 370px;margin-top: 35px;}
+    .lead-2 {top: -8px;left: 145px;}
+    .lead-2 .leaderbox {width: 185px;height: 135px;}
+    .lead-2 .namebox{margin-left: 20px;}
+    .memberpic.akshay {width: 70px;top: 25px;left: 57px;}
+    .memberpic.akshay:hover {width: 84px;left: 52px;}
+    .memberpic.jayti {width: 54px;left: 72px;}
+    .memberpic.jayti:hover {width: 118px;}
+    .memberpic.mohit {width: 102px;top: 26px;left: 40px;}
+    .memberpic.mohit:hover {width: 80px;left: 55px;}
+    .foundmember{margin-top: 0px;}
+    .founder.foundmember { margin-top:-19px;}
+    .lead-3 {left: 73px;top: 60px;}
+    .lead-3 .leadbox {width: 190px;}
+    .lead-3 .leaderbox {width: 190px;height: 140px;}
+    .lead-3 .namebox{margin-left: 20px;}
+    .memberpic.vaibhav{width: 99px;top: 26px;}
+    .memberpic.vaibhav:hover {width: 70px;top: 25px;left: 58px;}
+    .memberpic.toral {width: 40px;left: 106px;}
+    .memberpic.nelson {width: 87px;top: 10px;left: 45px;}
+    .memberpic.nelson:hover {width: 70px;top: 23px;left: 60px;}
+    .leadjointext h2 {font-size: 22px;}
+    .leadjoinpic {width: 100px;}
+    .leadjointext {width: calc(100% - 120px);}
+    .hoverbox{left: 0px;bottom: 20px;}
+    .trainglebox{width: 260px;padding: 30px;}
+    .trainglebox:before{bottom: -35px;left: 120px;}
+    .trainglebox:after{bottom: -58px;left: 120px;}
+    .leadertxt h2,.leadertxt h3 {font-size: 18px;}
+    .leadertxt .degign,
+    .leadertxt p {font-size: 12px;}
+    .leadertxt a{word-wrap: break-word;}
+    .memberpic.nelson {height: 102px;}
+}
+@media screen and (max-width:736px) {
+    .leadershipbox,
+    .buildingbg, .roadbg{display: none;}
+    .leadjoinpic img{margin-top: 10px;}
+    .leaderslide-mob{
+        display: block;
+        width: 100%;
+        float: left;
+        background: #41799c;
+        padding-top: 70px;
+        padding-bottom: 15px;
+    }
+    .leaderbox {
+        width: 200px;
+        height: 155px;
+    }
+    .lead-swiper .swiper-slide{text-align: center;}
+    .lead-swiper .swiper-slide .leadbox {
+        width: 200px;
+        float: none;
+        display: inline-block;
+    }
+    .memberpic:hover + .hoverbox{display: none;}
+    
+    .memberpic.ashish-pic,
+    .memberpic.ashish-pic:hover {
+        background: url(../images/leadership/ashish-pic.png) no-repeat;
+        background-size: 100%;
+        width: 54px;
+        top: 30px;
+        left: 70px;
+        height: 90px;
+    }
+    .memberpic.rakesh-pic,
+    .memberpic.rakesh-pic:hover {
+        background: url(../images/leadership/rakesh-pic.png) no-repeat;
+        background-size: 100%;
+        width: 86px;
+        top: 30px;
+        left: 63px;
+        height: 90px;
+    }
+    .memberpic.akshay,
+    .memberpic.akshay:hover {
+        background: url(../images/leadership/akshay.png) no-repeat;
+        background-size: 100%;
+        width: 77px;
+        top: 25px;
+        left: 60px;
+    }
+    .memberpic.jayti,
+    .memberpic.jayti:hover {
+        background: url(../images/leadership/jayti.png) no-repeat;
+        background-size: 100%;
+        top: 24px;
+        width: 60px;
+        left: 72px;
+    }   
+    .memberpic.mohit,
+    .memberpic.mohit:hover {
+        background: url(../images/leadership/mohit.png) no-repeat;
+        background-size: 100%;
+        width: 110px;
+        top: 27px;
+        left: 40px;
+    }
+    .memberpic.vaibhav,
+    .memberpic.vaibhav:hover {
+        background: url(../images/leadership/vaibhav.png) no-repeat;
+        background-size: 100%;
+        width: 105px;
+        top: 26px;
+        left: 45px;
+    }  
+    .memberpic.toral,
+    .memberpic.toral:hover {
+        background: url(../images/leadership/toral.png) no-repeat;
+        background-size: 100%;
+        width: 48px;
+        left: 106px;
+    }
+    .memberpic.nelson,
+    .memberpic.nelson:hover {
+        background: url(../images/leadership/nelson.png) no-repeat;
+        background-size: 100%;
+        width: 91px;
+        height: 160px;
+        top: 10px;
+        left: 45px;
+    }
+    .leadpop .main-modal{
+        width: 320px;
+        margin: 20px auto;
+    }   
+    .lead-swiper .swiper-button-next,
+    .lead-swiper .swiper-button-prev{
+        /*background-size: 60%;*/
+        top: 46%;
+        transform: translateY(-50%);
+    }
+    .lead-swiper .swiper-button-next{right: 0px;}
+    .lead-swiper .swiper-button-prev{left: 0px;top: 45%;transform: translateY(-45%) rotate(180deg);}
+    
+}
+@media screen and (max-width:667px) {
+    .leadjoinpic {width: 80px;}
+    .leadjointext {width: calc(100% - 100px);}
+    
+}
+@media screen and (max-width:640px) {
+    .leadjoinpic {width: 70px;}
+    .leadjointext {width: calc(100% - 90px);}
+    .leadjointext h2 {font-size: 20px;}
+    .leadjointext p{font-size: 11px;}
+    
+}
+@media screen and (max-width:480px) {
+    .leaderslide-mob .lead-swiper{padding: 10px 0px;}
+    .lead-swiper .swiper-button-next {right: 15px;}
+    .lead-swiper .swiper-button-prev {left: 15px;}
+    .leaderjoin .mobwidth{width: 100%;padding-top: 10px;}
+    .leaderjoin .mobwidth:last-child{padding-bottom: 10px;}
+    .leadjointext p {font-size: 12px;}
+    .leadjoinpic img.life-at-pbc { margin-top: 0px;}
+}
+@media screen and (max-width:320px) {
+    .leadpop .main-modal {
+        width: 280px;
+        margin: 20px auto;
+    }
+}
+
+
+/*-------new css added in date 7 fab 2017--------*/
+#olark-wrapper .olark-launch-button .olark-button-text,
+#olark-wrapper .olark-launch-button {
+    display: none !important;
+}
+#olark-wrapper.olarkbr .olark-launch-button {
+    background-color: #006ca2 !important;
+}
+#olark-wrapper.olarkbr .olark-top-bar {
+    background-color: #006ca2 !important;
+    color: #ffffff !important;
+    border-color: #006ca2 !important;
+}
+#olark-wrapper.olarkbr #olark-container .olark-form-send-button{
+    background-color: #006ca2 !important;
+}
+.projectlaunch{
+    clear: both;
+    width: 100%;
+    float: left;
+    margin: -5px auto 0px;
+}
+.projectlaunch img{
+    float: left;
+}
+.rightbrand-launch{
+    width: 60%;
+    float: left;
+    background: url(../images/services/launch-project-right.jpg) center no-repeat;
+    background-size: cover;
+    height: 115px;
+}
+.leftbrand{
+    width: 40%;
+    float: left;
+    background-image: url(../images/services/brand-strategy.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 115px;
+}
+.brand-identy{
+    background-image: url(../images/services/brand-identity.jpg);
+}
+.brand-position{
+    background-image: url(../images/services/brand-positioning.jpg);
+}
+.brand-commiplan{
+    background-image: url(../images/services/communication-planning.jpg);
+}
+.brand-dev{
+    background-image: url(../images/services/development.jpg);
+}
+.mobileapps{
+    background-image: url(../images/services/mobile-apps.jpg);
+}
+.digimarket{
+    background-image: url(../images/services/digi-marketing.jpg);
+}
+.website-identy{
+    background-image: url(../images/services/website-identity.jpg);
+}
+.microsites-development{
+    background-image: url(../images/services/microsites-design-development.jpg);
+}
+.app-marketing{
+    background-image: url(../images/services/app-marketing.jpg);
+}
+.app-services{
+    background-image: url(../images/services/app-services.jpg);
+}
+.app-store-optimization{
+    background-image: url(../images/services/app-store-optimization.jpg);
+}
+.app-ui-ux-design{
+    background-image: url(../images/services/app-ui-ux-design.jpg);
+}
+.branding-services{
+    background-image: url(../images/services/branding-services.jpg);
+}
+.creative-services{
+    background-image: url(../images/services/creative-services.jpg);
+}
+.ecommerce-solutions{
+    background-image: url(../images/services/ecommerce-solutions.jpg);
+}
+.content-marketing{
+    background-image: url(../images/services/content-marketing.jpg);
+}
+.corporate-branding{
+    background-image: url(../images/services/corporate-branding.jpg);
+}
+.creative-advertising{
+    background-image: url(../images/services/creative-advertising.jpg);
+}
+.enterprise-solutions{
+    background-image: url(../images/services/enterprise-solutions.jpg);
+}
+.google-ads{
+    background-image: url(../images/services/google-ads.jpg);
+}
+.mobile-apps-development{
+    background-image: url(../images/services/mobile-apps-development.jpg);
+}
+.mobile-game-development{
+    background-image: url(../images/services/mobile-game-development.jpg);
+}
+.mobile-marketing{
+    background-image: url(../images/services/mobile-marketing.jpg);
+}
+.portal-creative-development{
+    background-image: url(../images/services/portal-creative-development.jpg);
+}
+.ppc-management-services{
+    background-image: url(../images/services/ppc-management-services.jpg);
+}
+.search-engine-marketing{
+    background-image: url(../images/services/search-engine-marketing.jpg);
+}
+.search-engine-optimization{
+    background-image: url(../images/services/search-engine-optimization.jpg);
+}
+.video-creation{
+    background-image: url(../images/services/video-creation.jpg);
+}
+.web-application-development{
+    background-image: url(../images/services/web-application-development.jpg);
+}
+.website-services{
+    background-image: url(../images/services/website-services.jpg);
+}
+.web-ui-ux-design{
+    background-image: url(../images/services/web-ui-ux-design.jpg);
+}
+
+/*-------new css added in date 7 fab 2017--------*/
+
+.nextpre{
+    text-indent: initial;
+    position: relative;
+    left: 0px;
+    top: -18px;
+    display: block;
+    z-index: 999;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0px 15px;
+    text-decoration: none;
+    text-align: right;
+}
+.nexbtn{
+    text-align: left;
+}
+.flex-direction-nav li a{
+    text-decoration: none;
+}
+.flex-direction-nav li a .preview{
+    height: 95%;
+}
+.fivestar{width: 98%;}
+.jo-newpage .mobwd {
+    margin-top: 40px;
+}
+.co-bottom {
+    padding-bottom: 50px;
+}
+.successLaunch, .failureLaunch, .sendingLaunch,
+.contactWaiting, .contactSuccess, .contactFailure,
+.careerWaiting, .careerSuccess, .careerFailure{
+    display:none;
+}
+.list-m{
+        display: none;
+    }
+    .menu-w{
+       background: none;
+       height: 0px;
+    }
+    .header-text h2{
+        color: #191919;
+    }
+    .opening-web #accordion{
+        display: none;
+    }
+   
