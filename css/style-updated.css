@@ -1501,7 +1501,7 @@ div#breadcrumb_wrapper h6 {
 		-moz-background-size: cover;
 		-o-background-size: cover;*/
 		background-size: cover;
-		height: 100vh;
+		height: 800px;
 		background-attachment: fixed;
 	}
 
