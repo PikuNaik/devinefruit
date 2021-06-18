@@ -1405,6 +1405,17 @@ div#breadcrumb_wrapper h6 {
 	}
 }
 @media (max-width:800px) {
+
+	.banner {
+		background: url('https://www.devinefruit.com/images/Main_Banner_DF.png') no-repeat center center fixed;
+		webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		height: 100vh;
+		background-attachment: fixed;
+	}
+
     #message p {
         font-size: 18px;
     }
@@ -1416,6 +1427,17 @@ div#breadcrumb_wrapper h6 {
 	}
 }
 @media (max-width:768px) {
+
+	.banner {
+		background: url('https://www.devinefruit.com/images/Main_Banner_DF.png') no-repeat center center fixed;
+		webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		height: 100vh;
+		background-attachment: fixed;
+	}
+
     #message p {
         font-size: 17px;
     }
@@ -1429,6 +1451,17 @@ div#breadcrumb_wrapper h6 {
     }
 }
 @media (max-width:736px) {
+
+	.banner {
+		background: url('https://www.devinefruit.com/images/Main_Banner_DF.png') no-repeat center center fixed;
+		webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		height: 100vh;
+		background-attachment: fixed;
+	}
+
     #message {
         width: 86%;
         left: 7%;
@@ -1442,6 +1475,17 @@ div#breadcrumb_wrapper h6 {
 	}
 }
 @media (max-width:667px) {
+
+	.banner {
+		background: url('https://www.devinefruit.com/images/Main_Banner_DF.png') no-repeat center center fixed;
+		webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		height: 100vh;
+		background-attachment: fixed;
+	}
+
     #message p {
         font-size: 16px;
         margin: 0.8em 0;
@@ -1459,6 +1503,17 @@ div#breadcrumb_wrapper h6 {
 	}
 }
 @media(max-width:600px) {
+
+	.banner {
+		background: url('https://www.devinefruit.com/images/Main_Banner_DF.png') no-repeat center center fixed;
+		webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		height: 100vh;
+		background-attachment: fixed;
+	}
+
     .w3-agile-google-map iframe {
         height: 320px;
     }
@@ -1470,6 +1525,17 @@ div#breadcrumb_wrapper h6 {
 	}
 }
 @media(max-width:568px) {
+
+	.banner {
+		background: url('https://www.devinefruit.com/images/Main_Banner_DF.png') no-repeat center center fixed;
+		webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		height: 100vh;
+		background-attachment: fixed;
+	}
+
     .portfolio-categ li {
         padding: 4px 10px;
         font-size: 1em;
