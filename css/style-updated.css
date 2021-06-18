@@ -35,7 +35,7 @@ a:hover {
 }
 
 .banner {
-    background: url('https://www.devinefruit.com/images/Main_Banner_DF.png') no-repeat 0px 0px;
+    /*background: url('https://www.devinefruit.com/images/Main_Banner_DF.png') no-repeat 0px 0px;*/
     background-size: cover;
     height: 100vh;
     background-attachment: fixed;
@@ -1243,7 +1243,7 @@ footer .w3-social a {
 /*- Typography page -*/
 
 .inner-banner {
-    background: url('https://www.devinefruit.com/images/Main_Banner_DF.png') no-repeat center;
+    /*background: url('https://www.devinefruit.com/images/Main_Banner_DF.png') no-repeat center;*/
     background-size: cover;
     background-attachment: fixed;
     min-height: 300px;
@@ -1495,10 +1495,10 @@ div#breadcrumb_wrapper h6 {
 @media(max-width:480px) {
 
 	.banner {
-		background: url('https://www.devinefruit.com/images/Main_Banner_DF.png') no-repeat center center fixed;
+		/*background: url('https://www.devinefruit.com/images/Main_Banner_DF.png') no-repeat center center fixed;
 		webkit-background-size: cover;
 		-moz-background-size: cover;
-		-o-background-size: cover;
+		-o-background-size: cover;*/
 		background-size: cover;
 		height: 100vh;
 		background-attachment: fixed;
