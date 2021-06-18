@@ -36,8 +36,9 @@ a:hover {
 
 .banner {
     /*background: url('https://www.devinefruit.com/images/Main_Banner_DF.png') no-repeat 0px 0px;*/
+	background: #000;
     background-size: cover;
-    height: 100vh;
+    height: 800px;
     background-attachment: fixed;
 }
 
