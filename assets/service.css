@@ -1,0 +1,104 @@
+.services-bg {
+    background:url(https://www.devinefruit.com/assets/services.png) no-repeat;    
+    background-size: 100% 100%;
+    position: relative;
+    padding-bottom: 30px;
+    height: 580px;
+}
+.services-title h2, .services-title h3 {
+    margin: 0px;
+    color: #fff;
+}
+.services-title h3 {
+    font-size: 35px;
+}
+.services-title h2 {
+    font-size: 45px;
+/*    margin-left: 225px;*/
+}
+.services-menu {
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+    padding: 15px 0px;
+    float: left;
+    width: 100%;
+    visibility: hidden;
+    min-height: 210px;
+}
+.click-service {
+    position:absolute;
+    right: 272px;
+    /*right: 236px;/0/*/
+    top:3px;
+}
+.services-menu ul {
+    padding: 21px 4px 17px 22px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    float: left;
+    width: 100%;
+    margin: 0;
+    background: rgba(0,0,0,0.5);
+}
+.services-menu li {
+    float: left;
+    background:url(../images/btn-bg.png) no-repeat;
+    width: 248px;
+    margin-right: 11px;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+.services-menu li:hover {
+    background:url(../images/btnHover-bg.png) no-repeat;
+}
+.services-menu li a{
+    display: block; 
+    color: #fff;
+    font-size: 22px;
+    float: left;
+    width: 100%;
+}
+.services-menu span {
+    display: inline-block;
+}
+.servicebgcontent {
+    text-align: center;
+    line-height: 15px;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -74px;
+}
+.servicebgcontent p {
+    font-size: 15px;
+}
+.servicebradingoption {
+    position: relative;
+    padding: 0px 0px 80px 0px;
+    /*background: #0b0c07;*/
+    background: -webkit-linear-gradient(#070a0d, #0b0c07); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#070a0d, #0b0c07); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#070a0d, #0b0c07); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#070a0d, #0b0c07); /* Standard syntax (must be last) */
+}
+.servicebradingpatch {
+    background: #094579;
+}
+.strategycontent b {
+    margin: 0px 4px;
+}
+.servicebgcontent p.yellotext a {
+    color: #ffd125;
+    text-decoration: none;
+}
+.servicebgcontent p span {
+    width: 8px;
+    height: 8px;
+    background: red;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0px 8px;
+}
