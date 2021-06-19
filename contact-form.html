@@ -1,24 +1,37 @@
-
-
-<form action="mailto:contact@yourdomain.com"
-
-
-method="POST"
-
-
-enctype="multipart/form-data"
-
-
-name="EmailForm">
-
-
-Name:<br>
-
-
-<input type="text" size="19″ name="ContactName"><br><br>
-
-
-Message:<br> <textarea name="ContactCommentt" rows="6″ cols="20″>
-
-
-</textarea><br><br> <input type="submit" value="Submit"> </form>
+<!DOCTYPE html>
+<html>
+  
+<head>
+  <title>Sending Mail</title>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script type="text/javascript">
+    function sendEmail() {
+      Email.send({
+        Host: "smtp.gmail.com",
+        Username: "prashant.anaik@gmail.com",
+        Password: "@Naik2208",
+        To: 'prashantnaik.alerts@gmail.com',
+        From: "prashant.anaik@gmail.com",
+        Subject: "Sending Email using javascript",
+        Body: "Well that was easy!!",
+        Attachments: [
+          {
+            name: "File_Name_with_Extension",
+            path: "Full Path of the file"
+          }]
+      })
+        .then(function (message) {
+          alert("Mail has been sent successfully")
+        });
+    }
+  </script>
+</head>
+  
+<body>
+  <form method="post">
+    <input type="button" value="Send Mail"
+        onclick="sendMail()" />
+  </form>
+</body>
+  
+</html>
