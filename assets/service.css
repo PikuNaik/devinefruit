@@ -2,7 +2,7 @@
     background:url(https://www.devinefruit.com/assets/services.png) no-repeat;    
     background-size: 100% 100%;
     position: relative;
-    padding-bottom: 30px;
+    /*padding-bottom: 30px;*/
     height: 800px;
 }
 .services-title h2, .services-title h3 {
@@ -102,3 +102,4 @@
     display: inline-block;
     margin: 0px 8px;
 }
+.header-space{padding-top: 80px;}
