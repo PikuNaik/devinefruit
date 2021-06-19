@@ -42,6 +42,13 @@ a:hover {
     background-attachment: fixed;
 }
 
+.portfolio-banner {
+    /*background: url('https://www.devinefruit.com/images/Main_Banner_DF.png') no-repeat 0px 0px;*/
+	background: #000;
+    background-size: cover;
+    height: 56px;
+    background-attachment: fixed;
+}
 /* banner typed text */
 
 #message p {
@@ -1502,6 +1509,13 @@ div#breadcrumb_wrapper h6 {
 		-o-background-size: cover;*/
 		background-size: cover;
 		height: 800px;
+		background-attachment: fixed;
+	}
+
+	.portfolio-banner {
+    /*background: url('https://www.devinefruit.com/images/Main_Banner_DF.png') no-repeat 0px 0px;*/
+		background-size: cover;
+		height: 56px;
 		background-attachment: fixed;
 	}
 
