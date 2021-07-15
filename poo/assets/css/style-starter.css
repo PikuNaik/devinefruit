@@ -9652,6 +9652,30 @@ textarea {
   .container-xl {
     max-width: 1140px; } }
 
+
+.banner-container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
+@media (min-width: 576px) {
+  .banner-container {
+    max-width: 540px; } }
+
+@media (min-width: 768px) {
+  .banner-container {
+    max-width: 720px; } }
+
+@media (min-width: 992px) {
+  .banner-container {
+    max-width: 960px; } }
+
+@media (min-width: 1200px) {
+  .banner-container {
+    max-width: 750px; } }
+
 .clear {
   clear: both; }
 
@@ -9852,6 +9876,34 @@ h3.global-white {
   z-index: 0;
   display: grid;
   align-items: center; }
+
+/*- Responsive -*/
+@media (max-width:3000px) {
+	.w3l-main-banner .banner-view {
+		min-height: 1000px;
+	}
+}
+
+/*- Responsive -*/
+@media (max-width:1600px) {
+	.w3l-main-banner .banner-view {
+		min-height: 500px;
+	}
+}
+
+/*- Responsive -*/
+@media (max-width:1280px) {
+	.w3l-main-banner .banner-view {
+		min-height: 500px;
+	}
+}
+
+/*- Responsive -*/
+@media (max-width:1080px) {
+	.w3l-main-banner .banner-view {
+		min-height: 700px;
+	}
+}
 
 @media (max-width: 992px) {
   .w3l-main-banner h3.gallery4-head {
