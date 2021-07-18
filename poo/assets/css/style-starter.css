@@ -11782,7 +11782,7 @@ div#small-dialog iframe {
   z-index: -1; }
 
 .w3l-testimonials .customers-6-content img {
-  width: 70px;
+  /*width: 70px;*/
   border-radius: 50%;
   margin: 0 auto; }
 
