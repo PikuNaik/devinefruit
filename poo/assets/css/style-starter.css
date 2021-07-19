@@ -11886,7 +11886,7 @@ div#small-dialog iframe {
   z-index: -1; }
 
 .w3l-testimonials .customers-6-content img {
-  width: 200px;
+  /*width: 70px;*/
   border-radius: 50%;
   margin: 0 auto; }
 
@@ -11903,7 +11903,7 @@ div#small-dialog iframe {
   color: var(--title-color); }
 
 .w3l-testimonials .customers-6-content .card {
-  padding: 20px 20px;
+  padding: 0px 0px;
   text-align: center;
   position: relative;
   border-radius: 4px;
